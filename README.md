@@ -10,7 +10,26 @@ The project is built **in public**. Ideas are refined over time, documents chang
 
 This repository is the **knowledge base** (source content).
 
-The website is published from a separate “site” repository (planned: `ai-assisted-software-development-com`) that pulls this content and builds/deploys it.
+The website is published from a separate “site” repository (`ai-assisted-software-development-com`) that pulls this content and builds/deploys it.
+
+## Publishing workflow (content → site)
+
+The publishing repo is `dudarev/ai-assisted-software-development-com` (Hugo + Cloudflare Pages).
+
+The workflow follows [a simple principle](https://dev.dudarev.com/publishing-obsidian-notes-to-a-public-site-overview/): mark what should be published, then export/build from a clean, publish-ready directory.
+
+Minimal loop:
+
+1. Write notes under `notes/` with a `publish` tag in frontmatter.
+2. Commit and push to `main`.
+3. A GitHub Action dispatches an update to the site repo.
+4. The site repo updates its `content` submodule and Cloudflare Pages rebuilds; the site build filters to `publish`-tagged pages.
+
+### One-time setup (GitHub)
+
+To enable the cross-repo trigger, add a secret in this repo:
+
+- `SITE_REPO_DISPATCH_TOKEN`: a GitHub token that can call `repository_dispatch` on `dudarev/ai-assisted-software-development-com` (a classic PAT with `repo` scope is sufficient).
 
 ## What this repository is
 
