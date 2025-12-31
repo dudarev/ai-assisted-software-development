@@ -25,4 +25,5 @@ Clarity and usefulness matter more than completeness.
 
 - [[Agentic coding]]
 - [Four Modes of AI Assistance](four-modes-of-ai-assistance.md)
+- [Interview-Driven Specification](interview-driven-specification.md)
 - [Ten Principles for Coding with AI](ten-principles-for-coding-with-ai.md)
