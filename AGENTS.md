@@ -36,6 +36,8 @@ When creating or modifying content:
 - Explain *why* a change is suggested
 - Prefer incremental evolution over rewrites
 - Respect existing terminology and structure
+- Avoid exposing private information (private repository names, local file paths, personal data)
+- Link to public resources when referencing external concepts or workflows
 
 When adding new material:
 - Start minimal
