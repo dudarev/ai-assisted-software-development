@@ -1,0 +1,26 @@
+name: Dispatch site update
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger site repo workflow
+        env:
+          GH_TOKEN: ${{ secrets.SITE_REPO_DISPATCH_TOKEN }}
+          SITE_REPO: dudarev/ai-assisted-software-development-com
+        run: |
+          if [ -z "${GH_TOKEN}" ]; then
+            echo "Missing secret: SITE_REPO_DISPATCH_TOKEN" >&2
+            exit 1
+          fi
+
+          curl -sS -X POST \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer ${GH_TOKEN}" \
+            "https://api.github.com/repos/${SITE_REPO}/dispatches" \
+            -d '{"event_type":"content_updated","client_payload":{"source_sha":"${{ github.sha }}"}}'
