@@ -1,3 +1,8 @@
+---
+title: "Open AI Agent Standards"
+tags: [ai-agent, standard, open-source, interoperability, publish]
+---
+
 # Open AI Agent Standards
 
 A list of emerging open standards for AI agents.
