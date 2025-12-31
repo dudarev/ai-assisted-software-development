@@ -6,6 +6,12 @@ Its purpose is to collect, systematize, and evolve knowledge about **AI-assisted
 
 The project is built **in public**. Ideas are refined over time, documents change, and assumptions are revisited. The history of the repository is part of the content.
 
+## Repository roles
+
+This repository is the **knowledge base** (source content).
+
+The website is published from a separate “site” repository (planned: `ai-assisted-software-development-com`) that pulls this content and builds/deploys it.
+
 ## What this repository is
 
 - A growing **knowledge base / wiki**
