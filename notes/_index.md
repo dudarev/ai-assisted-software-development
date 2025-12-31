@@ -24,6 +24,8 @@ Clarity and usefulness matter more than completeness.
 ## All Notes
 
 - [[Agentic coding]]
+- [Agentic Harness](agentic-harness.md)
 - [Four Modes of AI Assistance](four-modes-of-ai-assistance.md)
 - [Interview-Driven Specification](interview-driven-specification.md)
+- [Open AI Agent Standards](open-ai-agent-standards.md)
 - [Ten Principles for Coding with AI](ten-principles-for-coding-with-ai.md)
