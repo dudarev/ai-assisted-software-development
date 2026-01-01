@@ -23,7 +23,7 @@ Clarity and usefulness matter more than completeness.
 
 ## All Notes
 
-- [[Agentic coding]]
+- [[Agentic Coding]]
 - [Agent Skills](agent-skills.md)
 - [Agentic Harness](agentic-harness.md)
 - [Four Modes of AI Assistance](four-modes-of-ai-assistance.md)
