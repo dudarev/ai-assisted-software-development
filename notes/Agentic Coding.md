@@ -1,9 +1,9 @@
 ---
-title: "Agentic coding"
+title: "Agentic Coding"
 tags: [publish, agents]
 ---
 
-# Agentic coding
+# Agentic Coding
 
 Working with AI agents that plan, execute and refine code collaboratively, far beyond simple autocomplete.
 
