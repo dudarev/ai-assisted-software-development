@@ -9,7 +9,7 @@ It focuses on practices that stay useful even as tools change: how to think, dec
 
 ## What these notes are
 
-- Notes, patterns, and mental models
+- Principles, patterns, and mental models
 - Experiments and workflows for using AI in software development
 - Snapshots of thinking that evolve over time
 
