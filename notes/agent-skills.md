@@ -5,7 +5,7 @@ tags: [publish, standard, ai-agent, skills, context-engineering, interoperabilit
 
 # Agent Skills
 
-Agent Skills is an **open standard** for packaging reusable agent capabilities (instructions + resources) in a folder that tools can discover and load on demand. The format was originally developed by **Anthropic** and released publicly as an open specification (the initial proposal and early ecosystem adoption emerged in **2025**). Treat the spec as **actively evolving**: implementations and best practices may change as more clients adopt it.
+Agent Skills is an **open standard** for packaging reusable agent capabilities (instructions + resources) in a folder that tools can discover and load on demand. The format was originally developed by **Anthropic** and released publicly as an open specification in October 2025 ([announcement](https://claude.com/blog/skills), [engineering blog](https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills)). Treat the spec as **actively evolving**: implementations and best practices may change as more clients adopt it.
 
 Canonical definition:
 
