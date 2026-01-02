@@ -44,6 +44,13 @@ When adding new material:
 - Leave room for future refinement
 - Link concepts instead of duplicating them
 
+When working with notes (in `notes/` directory):
+- Keep notes self-contained and publishable
+- Do not include links to `raw/` or `distilled/` files in the note content
+- Source references belong in the frontmatter `distilled` property, not in the body
+- Link only to public external resources (articles, papers, podcasts) in the References section
+- Notes should be readable and useful without access to the capture/distillation pipeline
+
 ## Authority model
 
 This repository represents the author’s evolving understanding.
