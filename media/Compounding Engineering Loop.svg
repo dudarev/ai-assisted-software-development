@@ -1,13 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-label="Compounding Engineering Loop">
+  <!-- Explicit background so it renders well on dark pages -->
+  <rect width="100%" height="100%" fill="#fff"/>
   <defs>
     <style>
       .step-label { font: 700 22px system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; fill: #111; }
       .step-desc { font: 400 13px system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; fill: #555; }
-      .step-box { fill: #fff; stroke: #222; stroke-width: 2; rx: 16; }
-      .arrow { stroke: #222; stroke-width: 2.5; fill: none; stroke-linecap: round; stroke-linejoin: round; marker-end: url(#arrowhead); }
+      .step-box { fill: #fff; stroke: #222; stroke-width: 1.8; rx: 16; }
+      .arrow { stroke: #222; stroke-width: 2.3; fill: none; stroke-linecap: round; stroke-linejoin: round; marker-end: url(#arrowhead); }
     </style>
 
-    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
       <path d="M0,0 L10,5 L0,10 Z" fill="#222"/>
     </marker>
   </defs>
