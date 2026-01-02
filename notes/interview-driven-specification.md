@@ -62,3 +62,7 @@ Thariq Shihipar ([@trq212](https://x.com/trq212)), [December 28, 2024](https://x
 
 - [[four-modes-of-ai-assistance]] — This pattern uses "Brainstorming" (Phase 1) and "Surgical changes" (Phase 2)
 - [[ten-principles-for-coding-with-ai#5]] — "Separate discovery from delivery"
+
+<!-- 
+a two-phase timeline/flow (minimal spec → interview/Q&A → refined spec → new session → execution) would make the “separate sessions” rationale visual.
+-->
