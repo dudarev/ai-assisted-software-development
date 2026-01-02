@@ -145,3 +145,8 @@ Segment developer groups, trial multiple AI tools, compare results across cohort
 - Laura Tacho (DX) & Gergely Orosz, "Measuring the impact of AI on software engineering" (2025-07)  
   The Pragmatic Engineer [podcast episode](https://newsletter.pragmaticengineer.com/p/measuring-the-impact-of-ai-on-software)  
   *Presents DX's three-pillar measurement framework (utilization, impact, cost); shares data from 180+ companies showing realistic adoption rates (~65% weekly in well-supported orgs), biggest time savings from stack trace analysis rather than code generation, and the mathematical constraint that coding represents only 20-25% of developer time. Emphasizes developer experience as the primary success metric and treating AI as an organizational experiment requiring baselines and structured rollout.*
+
+
+<!--
+Links to Dora metrics, also to 3-pillar framework can be provided. Also a section about 3 pilar framework can be reduced significantly.
+-->
