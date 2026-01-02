@@ -2,9 +2,7 @@
 title: "Measuring AI Assistant's Impact on Software Development Life Cycle"
 tags: ["publish", "measurement", "developer-experience", "productivity", "dora"]
 summary: "Principles, approaches, and measurement strategies for evaluating the impact of AI assistance across the full software development life cycle."
-distilled: [
-  [podcast web page](../distilled/20260102-101605Z--measuring-impact-ai-software-engineering.md)
-]
+distilled: ["../distilled/20260102-101605Z--measuring-impact-ai-software-engineering.md"]
 ---
 
 # Measuring AI Assistant's Impact on Software Development Life Cycle
