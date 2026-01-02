@@ -25,6 +25,8 @@ Treat process knowledge as a first-class artifact. The code is not the only outp
 
 **Heuristic**: If you did not codify, you only shipped code once. If you codify, you shipped capability.
 
+**Note on AI assistance**: While the "Delegate" step explicitly hands tasks to autonomous agents, AI assistants can be valuable collaborators throughout all stages—helping draft plans, review code, suggest codifications, or refine templates. Delegation to an agent is just one form of AI-assisted work in this loop.
+
 ## The Loop
 
 ### 1. Plan
