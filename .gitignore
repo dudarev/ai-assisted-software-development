@@ -1,6 +1,7 @@
 .vscode
 .DS_Store
 .hugo_build.lock
+.obsidian
 
 # Local-only captures (keep folder markers + docs)
 raw/*
