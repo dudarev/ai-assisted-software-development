@@ -1,7 +1,12 @@
 ---
-title: "Compounding Engineering Loop (Plan → Delegate → Assess → Codify)"
-created: "2026-01-02"
-tags: ["workflow", "continuous-improvement", "productivity", "publish"]
+title: Compounding Engineering Loop (Plan → Delegate → Assess → Codify)
+created: 2026-01-02
+tags:
+  - workflow
+  - continuous-improvement
+  - productivity
+  - publish
+chats: https://chatgpt.com/c/6957c2d0-7370-8326-a6b8-8ec8c6670cbc
 ---
 
 # Compounding Engineering Loop
