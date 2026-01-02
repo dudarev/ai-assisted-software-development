@@ -11,6 +11,8 @@ chats: https://chatgpt.com/c/6957c2d0-7370-8326-a6b8-8ec8c6670cbc
 
 # Compounding Engineering Loop
 
+![[Compounding Engineering Loop.svg]]
+
 Dan Shipper (Every) describes **compounding engineering** as an AI-native way of building software where each shipped feature makes the next feature easier (not harder).
 
 The loop: **Plan → Delegate → Assess → Codify**
@@ -105,4 +107,3 @@ Mapping: Plan ≈ Plan, Delegate/Work ≈ Do, Assess/Review ≈ Check/Study, Cod
 
 **Improvement Kata** (scientific thinking as a practiced loop):
 - Rother, Mike. [The Improvement Kata](https://www-personal.umich.edu/~mrother/The_Improvement_Kata.html).
-

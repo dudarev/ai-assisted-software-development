@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-label="Compounding Engineering Loop">
+  <defs>
+    <style>
+      .step-label { font: 700 22px system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; fill: #111; }
+      .step-desc { font: 400 13px system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; fill: #555; }
+      .step-box { fill: #fff; stroke: #222; stroke-width: 2; rx: 16; }
+      .arrow { stroke: #222; stroke-width: 2.5; fill: none; stroke-linecap: round; stroke-linejoin: round; marker-end: url(#arrowhead); }
+    </style>
+
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#222"/>
+    </marker>
+  </defs>
+
+  <!-- Step 1: Plan (top center) -->
+  <rect x="275" y="50" width="250" height="90" class="step-box"/>
+  <text x="400" y="90" text-anchor="middle" class="step-label">1. Plan</text>
+  <text x="400" y="112" text-anchor="middle" class="step-desc">Create detailed execution plan</text>
+
+  <!-- Step 2: Delegate (right) -->
+  <rect x="525" y="250" width="250" height="90" class="step-box"/>
+  <text x="650" y="290" text-anchor="middle" class="step-label">2. Delegate</text>
+  <text x="650" y="312" text-anchor="middle" class="step-desc">Agents execute tasks</text>
+
+  <!-- Step 3: Assess (bottom center) -->
+  <rect x="275" y="460" width="250" height="90" class="step-box"/>
+  <text x="400" y="500" text-anchor="middle" class="step-label">3. Assess</text>
+  <text x="400" y="522" text-anchor="middle" class="step-desc">Test, review, and verify</text>
+
+  <!-- Step 4: Codify (left) -->
+  <rect x="25" y="250" width="250" height="90" class="step-box"/>
+  <text x="150" y="290" text-anchor="middle" class="step-label">4. Codify</text>
+  <text x="150" y="312" text-anchor="middle" class="step-desc">Turn learning into defaults</text>
+
+  <!-- Arrows connecting the loop (clockwise, smooth circular flow) -->
+  <!-- Plan → Delegate (from right edge of Plan to top edge of Delegate) -->
+  <path d="M525 95 C600 95, 650 170, 650 250" class="arrow"/>
+  
+  <!-- Delegate → Assess (from bottom edge of Delegate to right edge of Assess) -->
+  <path d="M650 340 C650 420, 595 505, 525 505" class="arrow"/>
+  
+  <!-- Assess → Codify (from left edge of Assess to bottom edge of Codify) -->
+  <path d="M275 505 C200 505, 150 420, 150 340" class="arrow"/>
+  
+  <!-- Codify → Plan (from top edge of Codify to left edge of Plan) -->
+  <path d="M150 250 C150 170, 200 95, 275 95" class="arrow"/>
+</svg>
