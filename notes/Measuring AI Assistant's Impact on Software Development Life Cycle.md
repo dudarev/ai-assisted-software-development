@@ -149,4 +149,10 @@ Segment developer groups, trial multiple AI tools, compare results across cohort
 
 <!--
 Links to Dora metrics, also to 3-pillar framework can be provided. Also a section about 3 pilar framework can be reduced significantly.
+
+https://itrevolution.com/product/vibe-coding-book/
+Has a measurement toolkit
+https://itrevolution.com/wp-content/uploads/2025/02/FAAFO-Measurement-Toolkit.pdf
+Connect this to FAAFO note
+vibe-coding-is-faafo.md
 -->
