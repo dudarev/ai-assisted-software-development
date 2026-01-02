@@ -2,6 +2,9 @@
 title: "Measuring AI Assistant's Impact on Software Development Life Cycle"
 tags: ["publish", "measurement", "developer-experience", "productivity", "dora"]
 summary: "Principles, approaches, and measurement strategies for evaluating the impact of AI assistance across the full software development life cycle."
+distilled: [
+  [podcast web page](../distilled/20260102-101605Z--measuring-impact-ai-software-engineering.md)
+]
 ---
 
 # Measuring AI Assistant's Impact on Software Development Life Cycle
@@ -142,6 +145,5 @@ Segment developer groups, trial multiple AI tools, compare results across cohort
   *Recommends combining leading indicators (sentiment, usage) with DORA metrics; notes that cycle time, PR size, and deployment frequency help ensure speed doesn't sacrifice quality.*
 
 - Laura Tacho (DX) & Gergely Orosz, "Measuring the impact of AI on software engineering" (2025-07)  
-  The Pragmatic Engineer podcast [episode](https://newsletter.pragmaticengineer.com/p/measuring-the-impact-of-ai-on-software)  
-  Local distilled: [20260102-101605Z--measuring-impact-ai-software-engineering.md](../distilled/20260102-101605Z--measuring-impact-ai-software-engineering.md)  
+  The Pragmatic Engineer [podcast episode](https://newsletter.pragmaticengineer.com/p/measuring-the-impact-of-ai-on-software)  
   *Presents DX's three-pillar measurement framework (utilization, impact, cost); shares data from 180+ companies showing realistic adoption rates (~65% weekly in well-supported orgs), biggest time savings from stack trace analysis rather than code generation, and the mathematical constraint that coding represents only 20-25% of developer time. Emphasizes developer experience as the primary success metric and treating AI as an organizational experiment requiring baselines and structured rollout.*
