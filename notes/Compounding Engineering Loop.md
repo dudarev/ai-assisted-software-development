@@ -89,6 +89,7 @@ After shipping, answer and encode:
 
 - Shipper, Dan. ["Dispatch from the Future: building an AI-native Company"](https://www.youtube.com/watch?v=MGzymaYBiss). YouTube.
 - Shipper, Dan. ["Compound Engineering: How Every Codes With Agents"](https://every.to/chain-of-thought/compound-engineering-how-every-codes-with-agents). Every.
+- Klaassen, Kieran. ["My AI Had Already Fixed the Code Before I Saw It"](https://every.to/source-code/my-ai-had-already-fixed-the-code-before-i-saw-it). Every. 
 - [compound-engineering-plugin](https://github.com/EveryInc/compound-engineering-plugin). GitHub, EveryInc.
 
 ### Related Prior Work
