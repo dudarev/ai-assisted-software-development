@@ -50,6 +50,7 @@ When working with notes (in `notes/` directory):
 - Source references belong in the frontmatter `distilled` property, not in the body
 - Link only to public external resources (articles, papers, podcasts) in the References section
 - Notes should be readable and useful without access to the capture/distillation pipeline
+- Avoid redundant tags: since the entire repository focuses on AI-assisted software development, do not tag notes with generic terms like "ai-assisted-development"—use specific, descriptive tags instead
 
 ## Authority model
 
