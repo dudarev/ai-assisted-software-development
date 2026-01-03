@@ -1,10 +1,19 @@
 ---
-title: "Rebuild Threshold"
-created: "2026-01-03"
-tags: ["publish", "refactoring", "rewrites", "migrations", "engineering-economics"]
-summary: "A decision point where rebuilding (often in parallel) becomes lower-risk than in-place refactoring."
-distilled: ["20260103-151353Z--why-ai-development-tools-are-about-to-shift"]
+title: Rebuild Threshold
+created: 2026-01-03
+tags:
+  - publish
+  - refactoring
+  - rewrites
+  - migrations
+  - engineering-economics
+summary: A decision point where rebuilding (often in parallel) becomes lower-risk than in-place refactoring.
+distilled:
+  - 20260103-151353Z--why-ai-development-tools-are-about-to-shift
 status: to-share
+chats:
+  - https://grok.com/c/047112e7-e208-4d9d-9a53-ca2637295a01?rid=9819da04-a891-4b09-a578-715aa57b2a93
+  - https://claude.ai/chat/0528675d-d6ad-43c1-9e01-8feed36844b9
 ---
 
 # Rebuild Threshold
@@ -12,6 +21,34 @@ status: to-share
 The **rebuild threshold** is the point where it’s cheaper *and* safer to rebuild a system (or subsystem) than to attempt a risky in-place refactor.
 
 In the “AI-assisted tooling” framing, this threshold can move earlier because implementation cost drops faster than risk does: generating a fresh, coherent architecture can be easier than reshaping a brittle one.
+
+<!--
+Twitter thread plan (personal experience)
+
+1/ I used to be involved in a lot of “major refactorings” that were basically rewrites in disguise.
+
+2/ In non‑AI development, I learned to avoid them: they take longer than planned, risk losing hard‑won edge‑case knowledge, and stall product learning.
+
+3/ The problem isn’t ambition — it’s *discovery*. Existing systems encode years of behavior across code, data, and operations.
+
+4/ So the pragmatic default was: refactor incrementally, keep shipping, don’t bet the company on a big rewrite.
+
+5/ But AI-assisted tools change the economics: implementation gets cheaper faster than risk gets cheaper.
+
+6/ That can move a “tipping point” earlier: sometimes it’s cheaper to (a) capture behavior clearly, then (b) rebuild cleanly in parallel.
+
+7/ The key is not “rewrite from scratch” — it’s “replacement with a parity harness”: traces/tests/fixtures that define what “same behavior” means.
+
+8/ After that: feature flags, canaries, incremental traffic, rollback paths. Replace safely; don’t big‑bang.
+
+9/ This won’t fit every case (data migrations and operability can dominate), but when it does, it’s a powerful option.
+
+10/ I call the decision boundary the “Rebuild Threshold” — a cost/risk crossover between refactoring vs. parallel replacement.
+
+11/ If you’re debating a risky refactor, run a threshold analysis: what’s your discovery tax, coupling, invariants, and parity-harness feasibility?
+
+12/ Note with heuristics + references: [Rebuild Threshold](./Rebuild%20Threshold.md) (replace with the public URL if you’re sharing externally).
+-->
 
 ## Decision rule (cost/risk crossover)
 
