@@ -1,0 +1,29 @@
+formulas:
+  short file name: |-
+    file.basename
+      .replace(/^(?:\d{8}-\d{6}z--|\d{4}-\d{2}-\d{2}t\d{6}[+-]\d{4}\s*-\s*)/, "")
+      .replace(/--/g, " - ")
+      .replace(/-/g, " ")
+views:
+  - type: table
+    name: table
+    filters:
+      and:
+        - file.infolder("notes")
+        - file.ext != "base"
+    order:
+      - file.name
+      - formula.short file name
+      - status
+      - tags
+    sort:
+      - property: file.name
+        direction: DESC
+      - property: status
+        direction: ASC
+    columnsize:
+      file.name: 169
+      formula.short file name: 466
+    columnSize:
+      formula.short file name: 230
+      note.status: 171
