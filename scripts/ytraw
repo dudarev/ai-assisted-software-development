@@ -1,0 +1,62 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+capture="$root/skills/get-youtube-transcript-raw/scripts/capture_youtube_transcript_raw.sh"
+
+usage() {
+  cat <<'EOF' >&2
+Usage:
+  ytraw "<youtube_url_or_markdown_link>"
+  ytraw                 # uses clipboard content
+  ytraw --from-stdin     # reads ytt output from stdin
+  ytraw --from-file <path>
+
+Examples:
+  ./scripts/ytraw "https://www.youtube.com/watch?v=..."
+  ./scripts/ytraw "[Some video](https://www.youtube.com/watch?v=...)"
+  ytt fetch --no-copy "https://www.youtube.com/watch?v=..." | ./scripts/ytraw
+EOF
+}
+
+if [[ "${1:-}" == "-h" || "${1:-}" == "--help" ]]; then
+  usage
+  exit 0
+fi
+
+# If stdin is piped and no args were provided, treat it as --from-stdin for a
+# single-command workflow:
+#   ytt fetch --no-copy "<url>" | ./scripts/ytraw
+if [[ "${1:-}" == "" && ! -t 0 ]]; then
+  exec "$capture" --from-stdin
+fi
+
+if [[ "${1:-}" == "" ]]; then
+  clipboard=""
+  if command -v pbpaste >/dev/null 2>&1; then
+    clipboard="$(pbpaste || true)"
+  elif command -v xclip >/dev/null 2>&1; then
+    clipboard="$(xclip -selection clipboard -o 2>/dev/null || true)"
+  elif command -v wl-paste >/dev/null 2>&1; then
+    clipboard="$(wl-paste 2>/dev/null || true)"
+  fi
+
+  input="$(
+    python3 - "$clipboard" <<'PY'
+import sys
+s = sys.argv[1]
+lines = [ln.strip() for ln in s.splitlines()]
+lines = [ln for ln in lines if ln]
+print(lines[0] if lines else "")
+PY
+  )"
+
+  if [[ "$input" == "" ]]; then
+    usage
+    exit 2
+  fi
+
+  exec "$capture" "$input"
+fi
+
+exec "$capture" "$@"
