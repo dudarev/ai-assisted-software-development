@@ -1,8 +1,13 @@
 ---
-title: "Vibe Coding is FAAFO"
-created: "2026-01-02"
-tags: ["ai-assisted-development", "vibe-coding", "productivity"]
-distilled: ["20260102-110158Z--the-value-of-vibe-coding"]
+title: Vibe Coding is FAAFO
+created: 2026-01-02
+tags:
+  - ai-assisted-development
+  - vibe-coding
+  - productivity
+distilled:
+  - 20260102-110158Z--the-value-of-vibe-coding
+status: rename
 ---
 
 # Vibe Coding is FAAFO

@@ -1,6 +1,8 @@
 ---
-title: "AI-Assisted Software Development"
-tags: [publish]
+title: AI-Assisted Software Development
+tags:
+  - publish
+status: to-duplicate
 ---
 
 This knowledge base is a public working notebook for AI-assisted software development.

@@ -1,6 +1,8 @@
 ---
-title: "Ten Principles for Coding with AI"
-tags: [publish]
+title: Ten Principles for Coding with AI
+tags:
+  - publish
+status: to-delete
 ---
 
 1. **Make the goal testable.** “Working” is vague; define what success looks like.

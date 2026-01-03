@@ -1,6 +1,13 @@
 ---
-title: "Interview-Driven Specification"
-tags: [publish, pattern, specification, requirements, workflow, large-features]
+title: Interview-Driven Specification
+tags:
+  - publish
+  - pattern
+  - specification
+  - requirements
+  - workflow
+  - large-features
+status: rename
 ---
 
 A two-phase approach for building large features: specification through structured Q&A, followed by execution in a separate session.

@@ -1,6 +1,8 @@
 ---
-title: "Four Modes of AI Assistance"
-tags: [publish]
+title: Four Modes of AI Assistance
+tags:
+  - publish
+status: to-delete
 ---
 
 AI can play different roles during software work. The failure mode is treating every task as if it wants the same level of rigor.
