@@ -1,15 +1,22 @@
 ---
-title: "Measuring the impact of AI on software engineering"
+title: Measuring the impact of AI on software engineering
 source_url: https://newsletter.pragmaticengineer.com/p/measuring-the-impact-of-ai-on-software
 captured_at: 2026-01-02T10:16:05Z
 distilled_at: 2026-01-02T10:18:08Z
-raw_ref: ../raw/20260102-101605Z--measuring-impact-ai-software-engineering.md
+raw_refs:
+  - "[[raw/20260102-101605Z--measuring-impact-ai-software-engineering]]"
 capture_type: podcast-transcript
-status: draft
+status: expressed
 agent: github-copilot
 model: claude-sonnet-4.5
-confidence_notes: "Transcript-based extraction; some technical details may have transcription errors. Data percentages and study results preserved as stated but represent July 2025 snapshot."
-tags: ["ai-impact", "developer-productivity", "measurement", "developer-experience", "ai-adoption", "case-studies"]
+confidence_notes: Transcript-based extraction; some technical details may have transcription errors. Data percentages and study results preserved as stated but represent July 2025 snapshot.
+tags:
+  - ai-impact
+  - developer-productivity
+  - measurement
+  - developer-experience
+  - ai-adoption
+  - case-studies
 ---
 
 ## Summary
@@ -170,7 +177,6 @@ Use AI to provide preliminary code review when human reviewers are in different 
 
 - Source: [The Pragmatic Engineer Podcast](https://newsletter.pragmaticengineer.com/p/measuring-the-impact-of-ai-on-software)
 - YouTube: [Video episode](https://www.youtube.com/watch?v=xHHlhoRC8W4)
-- Raw: [20260102-101605Z--measuring-impact-ai-software-engineering.md](../raw/20260102-101605Z--measuring-impact-ai-software-engineering.md)
 - DX AI Measurement Framework: https://getdx.com/research/measuring-ai-code-assistants-and-agents/
 - Guide to AI-Assisted Engineering: https://getdx.com/guide/ai-assisted-engineering/
 - DORA AI Impact Report: https://dora.dev/research/ai/gen-ai-report/

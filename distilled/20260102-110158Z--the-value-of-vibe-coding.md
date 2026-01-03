@@ -3,7 +3,8 @@ title: "The Value Of Vibe Coding (or, the Good FAAFO)"
 source_url: "https://itrevolution.com/articles/the-value-of-vibe-coding-or-the-good-faafo/"
 captured_at: "2026-01-02T11:01:58Z"
 distilled_at: "2026-01-02T11:07:23Z"
-raw_ref: "../raw/20260102-110158Z--the-value-of-vibe-coding.md"
+raw_refs:
+  - "[[raw/20260102-110158Z--the-value-of-vibe-coding]]"
 capture_type: "web_page"
 status: "draft"
 agent: "github-copilot"
@@ -121,5 +122,4 @@ Gene Kim and Steve Yegge introduce "vibe coding" as AI-assisted programming that
 ## Links
 
 - Source: [https://itrevolution.com/articles/the-value-of-vibe-coding-or-the-good-faafo/](https://itrevolution.com/articles/the-value-of-vibe-coding-or-the-good-faafo/)
-- Raw: [20260102-110158Z--the-value-of-vibe-coding.md](../raw/20260102-110158Z--the-value-of-vibe-coding.md)
 - Book: [Vibe Coding: Building Production-Grade Software With GenAI, Chat, Agents, and Beyond](https://itrevolution.com/product/vibe-coding-book/)

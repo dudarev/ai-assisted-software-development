@@ -3,7 +3,8 @@ title: "Patterns for AI assisted software development"
 source_url: "https://dev.to/javatarz/patterns-for-ai-assisted-software-development-4ga2"
 captured_at: "2026-01-02T09:51:07Z"
 distilled_at: "2026-01-02T09:58:12Z"
-raw_ref: "../raw/20260102-095107Z--patterns-for-ai-assisted-software-development.md"
+raw_refs:
+  - "[[raw/20260102-095107Z--patterns-for-ai-assisted-software-development]]"
 capture_type: web_page
 status: draft
 agent: github-copilot
@@ -145,4 +146,3 @@ Automated note-takers produce summaries (quick read) and transcripts (higher con
 ## Links
 
 - Source: [https://dev.to/javatarz/patterns-for-ai-assisted-software-development-4ga2](https://dev.to/javatarz/patterns-for-ai-assisted-software-development-4ga2)
-- Raw: [20260102-095107Z--patterns-for-ai-assisted-software-development.md](../raw/20260102-095107Z--patterns-for-ai-assisted-software-development.md)
