@@ -32,3 +32,4 @@ Clarity and usefulness matter more than completeness.
 - [Open AI Agent Standards](open-ai-agent-standards.md)
 - [Ten Principles for Coding with AI](ten-principles-for-coding-with-ai.md)
 - [[Compounding Engineering Loop]]
+- [[Rebuild Threshold]]
