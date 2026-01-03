@@ -17,6 +17,7 @@ Reference framework: Tiago Forte’s **CODE** (Capture → Organize → Distill 
 - https://fortelabs.com/blog/basboverview/
 
 The guiding principle: **raw is append-only and reproducible**; distilled content is allowed to evolve.
+In practice, keep the raw *body* append-only; it’s fine to update raw front matter to reflect processing status and add backlinks (raw is local-only).
 
 ## Folder structure
 
@@ -83,6 +84,7 @@ Optional keys:
 - `source_kind` — `article|docs|video|thread|post|repo`
 - `author` — best effort
 - `published_at` — best effort
+- `distilled_refs` — list of Obsidian-style internal links to distilled outputs (backlinks; supports multiple; always a list, even for one; quote `[[...]]` values in YAML)
 - `tags` — lightweight labels (`[ai-agent, workflow, …]`)
 
 Example:
@@ -104,10 +106,10 @@ status: captured
 Recommended keys:
 
 - `title`
-- `source_url`
-- `captured_at` — when raw was captured
+- `source_url` — primary source URL (optional; `raw_refs` is the source of truth)
+- `captured_at` — capture timestamp (optional; see `raw_refs` for full provenance)
 - `distilled_at` — when this distilled file was produced
-- `raw_ref` — relative path to the raw file (single source of truth)
+- `raw_refs` — list of Obsidian-style internal links to the raw files (source of truth; supports multiple; always a list, even for one; quote `[[...]]` values in YAML)
 - `capture_type`
 - `status` — `draft|reviewed|integrated|archived|viewed` (flexible; add values as needed)
 
@@ -127,7 +129,8 @@ title: "Some Page Title (Distilled)"
 source_url: "https://example.com/page"
 captured_at: "2026-01-01T14:22:33Z"
 distilled_at: "2026-01-01T14:30:00Z"
-raw_ref: "raw/20260101-142233Z--some-page-title.md"
+raw_refs:
+  - "[[raw/20260101-142233Z--some-page-title]]"
 capture_type: web_page
 status: draft
 agent: github-copilot
@@ -143,7 +146,8 @@ Keep it simple:
 - **Web pages:** store extracted Markdown as the primary raw artifact; optionally keep HTML alongside it for traceability (raw is local-only).
 - **YouTube:** store transcript as Markdown and keep the video URL in front matter.
 - **Tweets/threads:** store rendered text (`.md`) plus per-tweet permalinks if you have them.
-- **Reddit threads:** store rendered thread text (`.md`) plus the canonical thread URL.- **Screenshots:** store image files (`.png`, `.jpg`, etc.) with descriptive front matter; AI can re-visualize diagrams during distillation.
+- **Reddit threads:** store rendered thread text (`.md`) plus the canonical thread URL.
+- **Screenshots:** store image files (`.png`, `.jpg`, etc.) with descriptive front matter; AI can re-visualize diagrams during distillation.
 Avoid trying to “clean” raw on day 1. Treat “cleanup” as derived work.
 
 ## Distilled content template
@@ -157,9 +161,13 @@ A suggested structure for `distilled/…/*.md`:
   - patterns
   - entities
   - follow-ups / open questions
-- “quotes” section (verbatim snippets with minimal context)- "next steps" — agent-suggested actions (e.g., integrate into specific notes, follow-up research)- links:
+- “quotes” section (verbatim snippets with minimal context)
+- "next steps" — agent-suggested actions (e.g., integrate into specific notes, follow-up research)
+- links:
   - `source_url`
-  - `raw_ref`
+  - `raw_refs`
+
+Keep provenance in front matter (`raw_refs`) and avoid repeating a `raw:` link in the body.
 
 Template:
 
@@ -168,8 +176,9 @@ Template:
 title: "…"
 source_url: "…"
 captured_at: "…"
-derived_at: "…"
-raw_ref: "…"
+distilled_at: "…"
+raw_refs:
+  - "[[raw/…]]"
 capture_type: web_page
 ---
 
@@ -187,7 +196,7 @@ capture_type: web_page
 
 ## Links
 - source: …
-- raw: …
+- <other relevant external links, if any>
 ```
 
 ## Agent skills (capabilities) to implement
@@ -355,7 +364,7 @@ Note: some skills may be “instructions only” and rely on an existing utility
 - writes a distilled file into `distilled/` with:
   - summary
   - extracted structured items
-  - backlinks to `raw_ref` + `source_url`
+  - backlinks to `raw_refs` + `source_url`
 
 **Notes:**
 

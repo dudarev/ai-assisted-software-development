@@ -11,4 +11,4 @@ This repo tracks only:
 - `raw/README.md`
 - `raw/.gitkeep`
 
-Conventions are defined in `docs/distilation/distilation-pipeline.md`.
+Conventions are defined in `docs/distillation/distillation-pipeline.md`.

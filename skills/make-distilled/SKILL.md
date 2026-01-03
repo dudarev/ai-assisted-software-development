@@ -17,16 +17,18 @@ Use this skill when:
 ## Inputs
 
 Required:
-- `raw_path` (string): Relative or absolute path to the raw file in `raw/`
+- `raw_paths` (list[string]): Relative or absolute paths to one or more raw files in `raw/`
 
 Optional:
 - `focus` (string): Specific aspect to emphasize (e.g., "patterns", "principles", "practical advice")
+- `distilled_filename` (string): Output filename (useful when distilling multiple raw files into one distilled file)
 
 ## Outputs
 
 This skill produces:
 1. A new file in `distilled/` with the same timestamp-slug naming pattern as the raw file
-2. Metadata returned to the agent:
+2. An update to the raw file front matter to add a backlink to one (or more) distilled outputs
+3. Metadata returned to the agent:
    - `distilled_path`: full path to the created distilled file
    - `title`: title of the distilled content
    - `distilled_at`: ISO timestamp (UTC)
@@ -34,16 +36,17 @@ This skill produces:
 
 ## Procedure
 
-### 1. Read the raw file
+### 1. Read the raw files
 
-- Use the `read_file` tool to load the entire raw file content
-- Parse the front matter to extract:
+- Use the `read_file` tool to load each raw file content
+- Parse front matter from each raw file to extract:
   - `title`
   - `source_url`
   - `captured_at`
   - `capture_type`
   - `author` (if available)
   - `published_at` (if available)
+  - `distilled_refs` (if present; used for appending a new backlink)
   - any other relevant metadata
 
 ### 2. Generate distilled content structure
@@ -100,11 +103,13 @@ Create YAML front matter for the distilled file:
 ```yaml
 ---
 title: "<original title> (or improved title if clearer)"
-source_url: "<from raw file>"
-captured_at: "<from raw file>"
+source_url: "<primary source URL (optional)>"
+captured_at: "<captured_at from a representative raw file>"
 distilled_at: "<current ISO timestamp UTC>"
-raw_ref: "<relative path from distilled/ to raw file>"
-capture_type: "<from raw file>"
+raw_refs:
+  - "[[raw/<raw file 1>]]"
+  - "[[raw/<raw file 2>]]"
+capture_type: "<capture_type from a representative raw file>"
 status: draft
 agent: github-copilot
 model: claude-sonnet-4.5
@@ -114,7 +119,11 @@ tags: ["tag1", "tag2", "tag3"]  # 3-7 relevant tags
 ```
 
 **Critical rules:**
-- Use `raw_ref` as a relative path (e.g., `../raw/20260102-095107Z--patterns.md`)
+- Use `raw_refs` as an Obsidian-style internal link list (e.g., `[[raw/20260102-095107Z--patterns-for-ai-assisted-software-development]]`).
+- Always use `raw_refs` (plural) as a list, even when there is only one raw source.
+- Also add (or append to) a backlink in each raw file front matter:
+  - `distilled_refs` should be a YAML list of Obsidian-style internal links (e.g., `[[distilled/20260102-095107Z--patterns-for-ai-assisted-software-development]]`)
+- In YAML front matter, quote Obsidian links (e.g., `- "[[raw/...]]"`) so the file stays valid YAML.
 - Be explicit in `confidence_notes` if:
   - Author/date was inferred rather than explicit
   - Content was truncated or unclear
@@ -175,21 +184,38 @@ Combine the extracted elements into this structure:
 ## Links
 
 - Source: [<source_url>](<source_url>)
-- Raw: [<raw filename>](<raw_ref>)
+- (Optional) Additional external links extracted from the source (avoid duplicating `raw_refs` here; they live in front matter)
+- <Other links extracted from content if relevant>
 ```
 
 ### 5. Generate filename and write the file
 
-- Filename: Use the same timestamp and slug from the raw file
-  - Example: if raw is `20260102-095107Z--patterns.md`, distilled is also `20260102-095107Z--patterns.md`
+- If `distilled_filename` is provided, use it.
+- Otherwise:
+  - If `raw_paths` contains exactly one file, use the same timestamp and slug as that raw file
+  - If `raw_paths` contains multiple files, generate a new `YYYYMMDD-HHMMSSZ--<slug>.md` filename based on the distilled title
 - Full path: `distilled/<filename>`
 - Content: front matter + blank line + distilled structure
 - Use `create_file` tool with the full content
 
-### 6. Confirm to user
+### 6. Update raw front matter (backlink)
+
+- For each file in `raw_paths`:
+  - Keep the raw body unchanged; only update front matter.
+  - Add or update `distilled_refs` as a YAML list:
+    - If `distilled_refs` is missing, add it.
+    - If `distilled_refs` exists, append the new distilled path (avoid duplicates).
+  - Use Obsidian-style internal links, e.g.:
+
+```yaml
+distilled_refs:
+  - "[[distilled/20260102-095107Z--patterns-for-ai-assisted-software-development]]"
+```
+
+### 7. Confirm to user
 
 Provide a brief confirmation:
-- Link to the created distilled file using relative path
+- Link to the created distilled file using an Obsidian-style internal link
 - One-sentence summary of what was extracted
 - Note any significant `confidence_notes` or gaps
 
@@ -225,7 +251,8 @@ Provide a brief confirmation:
 
 **Input:**
 ```
-raw_path: raw/20260102-095107Z--patterns-for-ai-assisted-software-development.md
+raw_paths:
+  - raw/20260102-095107Z--patterns-for-ai-assisted-software-development.md
 ```
 
 **Process:**
@@ -237,14 +264,16 @@ raw_path: raw/20260102-095107Z--patterns-for-ai-assisted-software-development.md
 
 **Output:**
 - Creates `distilled/20260102-095107Z--patterns-for-ai-assisted-software-development.md`
-- Front matter includes `raw_ref: ../raw/20260102-095107Z--patterns-for-ai-assisted-software-development.md`
+- Front matter includes `raw_refs: ["[[raw/20260102-095107Z--patterns-for-ai-assisted-software-development]]"]`
+- Raw front matter updated with `distilled_refs: ["[[distilled/20260102-095107Z--patterns-for-ai-assisted-software-development]]"]`
 - Structured summary + key points + concepts + quotes + next steps
 
 ### Example 2: YouTube transcript
 
 **Input:**
 ```
-raw_path: raw/20260105-140000Z--building-production-agents.md
+raw_paths:
+  - raw/20260105-140000Z--building-production-agents.md
 ```
 
 **Process:**
@@ -258,6 +287,7 @@ raw_path: raw/20260105-140000Z--building-production-agents.md
 - Creates `distilled/20260105-140000Z--building-production-agents.md`
 - `confidence_notes` might mention: "Transcript had several unclear segments; some technical terms may be misspelled"
 - Entities section lists tools and frameworks discussed
+- Raw front matter updated with `distilled_refs` (append if already present)
 
 ## Failure modes and edge cases
 
@@ -283,6 +313,7 @@ raw_path: raw/20260105-140000Z--building-production-agents.md
 
 - `read_file` — to load the raw content
 - `create_file` — to write the distilled output
+- `update_file` (or equivalent) — to update raw front matter with `distilled_refs`
 - `run_in_terminal` — to generate UTC timestamp if needed
 
 ## References
