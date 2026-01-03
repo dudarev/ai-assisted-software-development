@@ -1,4 +1,8 @@
+# Append and Review
+
 This note is based on the ideas described in [The append-and-review note | karpathy](https://karpathy.bearblog.dev/the-append-and-review-note/). Notes, ideas, and other items are added here and reviewed later for relevance.
+
+---
 
 [Coding with AI // Chip Huyen - YouTube](https://www.youtube.com/watch?v=xY1FcjIbErQ) - Mentioned as the best keynote in MLOps community. 
 
@@ -10,3 +14,12 @@ Lada Kesseler - Emerging Patterns for Coding with Generative AI | DevCon Fall 20
 https://github.com/lexler/Talks/blob/main/augmented_coding_patterns_masterclass.md - "map" of patterns
 
 [faafo vibe - Search / X](https://x.com/search?q=faafo%20vibe&src=typed_query&f=live) - related to [[vibe-coding-is-faafo]]
+Also link that note from index .
+
+Think about creating an automatic page with a list of all the notes.
+
+Create create RTT similar to YTT, a tool to get reddit threads and in addition to the threads it can get also subreddits and one of the exercises can be to get top posts in some of the subreddits and determine which are appropriate for this knowledge base. 
+
+I wonder if I can create a tool XTT that uses Playwright and gets Twitter threads. Or maybe uses a browser and does it automatically. 
+
+Create documentation about Obsidian, for example about bases and functions that can be used there and how easily one can copy them from one folder to another. 
