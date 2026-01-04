@@ -1,6 +1,12 @@
 ---
-title: "Open AI Agent Standards"
-tags: [ai-agent, standard, open-source, interoperability, publish]
+title: Open AI Agent Standards
+tags:
+  - ai-agent
+  - standard
+  - open-source
+  - interoperability
+  - publish
+status: rename
 ---
 
 # Open AI Agent Standards

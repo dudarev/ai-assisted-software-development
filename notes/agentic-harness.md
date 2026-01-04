@@ -1,5 +1,12 @@
 ---
-tags: [publish, context-engineering, tool-use, orchestration, evaluation, harness]
+tags:
+  - publish
+  - context-engineering
+  - tool-use
+  - orchestration
+  - evaluation
+  - harness
+status: rename
 ---
 
 # Agentic Harness

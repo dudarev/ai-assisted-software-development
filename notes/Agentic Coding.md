@@ -1,6 +1,9 @@
 ---
-title: "Agentic Coding"
-tags: [publish, agents]
+title: Agentic Coding
+tags:
+  - publish
+  - agents
+status: more-tags-needed
 ---
 
 # Agentic Coding

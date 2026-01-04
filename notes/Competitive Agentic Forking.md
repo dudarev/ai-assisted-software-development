@@ -7,6 +7,7 @@ tags:
   - evaluation
   - pattern
 created: 2026-01-04
+status: add-diagram
 ---
 # Competitive Agentic Forking
 

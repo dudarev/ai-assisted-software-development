@@ -9,8 +9,8 @@ tags:
   - engineering-economics
 summary: A decision point where rebuilding (often in parallel) becomes lower-risk than in-place refactoring.
 distilled:
-  - 20260103-151353Z--why-ai-development-tools-are-about-to-shift
-status: to-share
+  - "[[distilled/20260103-151353Z--why-ai-development-tools-are-about-to-shift|20260103-151353Z--why-ai-development-tools-are-about-to-shift]]"
+status: share
 chats:
   - https://grok.com/c/047112e7-e208-4d9d-9a53-ca2637295a01?rid=9819da04-a891-4b09-a578-715aa57b2a93
   - https://claude.ai/chat/0528675d-d6ad-43c1-9e01-8feed36844b9

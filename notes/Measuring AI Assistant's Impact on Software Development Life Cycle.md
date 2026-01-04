@@ -1,8 +1,15 @@
 ---
-title: "Measuring AI Assistant's Impact on Software Development Life Cycle"
-tags: ["publish", "measurement", "developer-experience", "productivity", "dora"]
-summary: "Principles, approaches, and measurement strategies for evaluating the impact of AI assistance across the full software development life cycle."
-distilled: ["../distilled/20260102-101605Z--measuring-impact-ai-software-engineering.md"]
+title: Measuring AI Assistant's Impact on Software Development Life Cycle
+tags:
+  - publish
+  - measurement
+  - developer-experience
+  - productivity
+  - dora
+summary: Principles, approaches, and measurement strategies for evaluating the impact of AI assistance across the full software development life cycle.
+distilled:
+  - "[[distilled/20260102-101605Z--measuring-impact-ai-software-engineering|20260102-101605Z--measuring-impact-ai-software-engineering]]"
+status: edit
 ---
 
 # Measuring AI Assistant's Impact on Software Development Life Cycle
@@ -42,6 +49,7 @@ Developers spend only 20-25% of their time actually coding. Even significant tim
 
 ## Measurement approaches
 
+<!-- TODO: potentially move it as a separate node because it's really a specific framework suggested by a person so maybe it can be captured as a separate document similar similar with that McKinsey framework which is not captured as a node yet. It can be linked here to say that multiple frameworks are available, but it can be captured as a separate document as well. -->
 ### Three-pillar framework
 
 A comprehensive measurement approach covers utilization, impact, and cost:
