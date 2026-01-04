@@ -8,6 +8,9 @@ tags:
   - pattern
 created: 2026-01-04
 status: add-diagram
+chats:
+  - https://chatgpt.com/c/695a7a18-dd30-8325-b35d-737b1dbe22af
+  - https://gemini.google.com/app/c36c694b2cbf7286
 ---
 # Competitive Agentic Forking
 
