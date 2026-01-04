@@ -17,8 +17,10 @@ tags:
   - workflows
   - context-management
   - publishing
+shares: https://x.com/dudarev/status/2007388736812921290
 ---
 
+<!-- TODO: think about how to call shares property in this case because i didn't really share this link rather shared the ideas shared my reply section below -->
 ## Summary
 
 In this thread, **@kepano** asks how people use **Obsidian with Claude Code**, and what they use it for. Replies emphasize practical “vault maintenance” work (backlinks, re-organization, mass metadata edits), and using the vault as a set of reusable **context files** to avoid re-explaining projects. A related tangent highlights the value of converting web pages to Markdown *before* sending them to LLMs (token efficiency + speed), with a note that rules-based conversion beats LLM-based HTML→MD. The thread also restates an Obsidian-aligned premise: plain-text local notes keep data in your control, and let you pick best-in-class AI tools (or none) rather than being locked into cloud-app “built-in agents.”

@@ -8,6 +8,7 @@ tags:
   - publish
 chats: https://chatgpt.com/c/6957c2d0-7370-8326-a6b8-8ec8c6670cbc
 status: gold
+shares: https://x.com/dudarev/status/2007110429420765495
 ---
 
 # Compounding Engineering Loop

@@ -22,6 +22,7 @@ It focuses on practices that stay useful even as tools change: how to think, dec
 
 Clarity and usefulness matter more than completeness.
 
+<!-- TODO: This can be done automatically and as a separate page. -->
 ## All Notes
 
 - [[Agentic Coding]]
