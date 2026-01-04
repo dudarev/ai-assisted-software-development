@@ -11,10 +11,15 @@ status: add-diagram
 chats:
   - https://chatgpt.com/c/695a7a18-dd30-8325-b35d-737b1dbe22af
   - https://gemini.google.com/app/c36c694b2cbf7286
+  - https://chatgpt.com/c/695a8325-d020-8331-85a6-ceb64b88992c
 ---
 # Competitive Agentic Forking
 
 <!-- Alternative name: agent competition pattern -->
+
+<!-- After more ideation now I am more inclined to call it fan-out and resolve pattern. That's discussed in one of the linked chats. -->
+
+<!-- In reference also mention existing concepts from LLM such as mixture of expert, best-of-N sampling -->
 
 ![[competitive-agentic-forking.png]]
 
