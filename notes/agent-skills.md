@@ -1,6 +1,7 @@
 ---
 title: "Agent Skills"
 tags: [publish, standard, ai-agent, skills, context-engineering, interoperability]
+status: rename
 ---
 
 # Agent Skills
