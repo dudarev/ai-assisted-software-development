@@ -64,7 +64,7 @@ The script `./scripts/ytraw` is designed to extract the URL directly from the cl
    ```bash
    ./scripts/ytraw
    ```
-3. Copy the path to the created raw file and share it with the model.
+3. If manual adjustments are required, you can edit the file directly. If you prefer the model to perform adjustments, share the file path or URL with it.
 
 ## Optional: shell alias (zsh)
 

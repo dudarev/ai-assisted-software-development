@@ -12,7 +12,7 @@ An **agentic harness** is the **wrapper around an LLM that turns it into an agen
 
 In practice, the harness is the part that:
 
-* Calls the model repeatedly (plan -> act -> observe -> update -> repeat)
+* Calls the model repeatedly (plan → act → observe → update → repeat)
 * Executes tools (shell, files, web, APIs, repo ops) on the model's behalf
 * Manages context (what to include, summarize, persist, retrieve)
 * Enforces constraints (step limits, timeouts, budgets, sandboxing, policy checks)
@@ -27,10 +27,10 @@ In practice, the harness is the part that:
 
 Most "agent capability" comes from the harness:
 
-* Better tool schemas and error handling -> fewer dead ends
-* Better context strategy -> less thrashing and hallucination
-* Better guardrails -> safer automation and fewer expensive loops
-* Better eval harness -> faster iteration and trustworthy improvements
+* Better tool schemas and error handling → fewer dead ends
+* Better context strategy → less thrashing and hallucination
+* Better guardrails → safer automation and fewer expensive loops
+* Better eval harness → faster iteration and trustworthy improvements
 
 ## Quick Checklist
 
