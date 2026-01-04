@@ -6,7 +6,9 @@ This note is based on the ideas described in [The append-and-review note | karpa
 
 [Coding with AI // Chip Huyen - YouTube](https://www.youtube.com/watch?v=xY1FcjIbErQ) - Mentioned as the best keynote in MLOps community. 
 
-“coding genie” analogy (Ken Beck) – powerful but mischievous: often “mostly works,” so you must tame it. As mentioned by Lada Kesseler https://www.youtube.com/watch?v=_LSK2bVf0Lc - In general, think about collecting different analogies appropriate for working with AI in the context of AI-assisted software development. 
+“coding genie” analogy (Ken Beck) – powerful but mischievous: often “mostly works,” so you must tame it. As mentioned by Lada Kesseler https://www.youtube.com/watch?v=_LSK2bVf0Lc 
+
+In general, think about collecting different analogies and metaphors appropriate for working with AI in the context of AI-assisted software development. https://chatgpt.com/c/69596ec5-db3c-8325-a8ab-c3e075dc77ad
 
 More related searches and talks by Lada Kesseler
 Lada Kesseler semantic zoom - Google Search — https://www.google.com/search?q=Lada+Kesseler+semantic+zoom - concept I like
