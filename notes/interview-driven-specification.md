@@ -8,6 +8,8 @@ tags:
   - workflow
   - large-features
 status: rename
+chats:
+  - https://chatgpt.com/c/6959f0fb-e97c-8326-9516-77799dda726a
 ---
 
 A two-phase approach for building large features: specification through structured Q&A, followed by execution in a separate session.
