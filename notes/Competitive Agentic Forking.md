@@ -13,6 +13,8 @@ status: add-diagram
 
 <!-- Alternative name: agent competition pattern -->
 
+![[competitive-agentic-forking.png]]
+
 **Competitive Agentic Forking** is a software development workflow pattern where specific tasks are "forked" to multiple independent AI agents or models. Instead of relying on a single agent, the system spawns parallel competitors that attempt the same task. Their outputs are then evaluated, compared, and either selected or merged.
 
 This approach brings the competitive evaluation model popularized by [lmarena.ai/leaderboard](https://lmarena.ai/leaderboard) directly into development workflows—not as external benchmarking, but as native process integration.
