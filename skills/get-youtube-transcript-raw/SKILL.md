@@ -52,6 +52,20 @@ If the current environment can’t access YouTube (common in sandboxes), run `yt
 ytt fetch --no-copy "<youtube_url>" | ./scripts/ytraw
 ```
 
+## Manual execution (Fallback)
+
+If you encounter persistent issues capturing a transcript within the sandbox (e.g., network restrictions or tool failures), **inform the user they can run the script manually** on their local machine.
+
+The script `./scripts/ytraw` is designed to extract the URL directly from the clipboard if no arguments are provided.
+
+**Instructions for the user:**
+1. Copy the YouTube URL to your clipboard.
+2. Run the following command in your terminal:
+   ```bash
+   ./scripts/ytraw
+   ```
+3. Copy the path to the created raw file and share it with the model.
+
 ## Optional: shell alias (zsh)
 
 Add to `~/.zshrc`:
