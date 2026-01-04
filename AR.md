@@ -10,6 +10,8 @@ This note is based on the ideas described in [The append-and-review note | karpa
 
 In general, think about collecting different analogies and metaphors appropriate for working with AI in the context of AI-assisted software development. https://chatgpt.com/c/69596ec5-db3c-8325-a8ab-c3e075dc77ad
 
+a concept of a digital center or a cyborg from coartintate project comes to mind
+
 More related searches and talks by Lada Kesseler
 Lada Kesseler semantic zoom - Google Search — https://www.google.com/search?q=Lada+Kesseler+semantic+zoom - concept I like
 Lada Kesseler - Emerging Patterns for Coding with Generative AI | DevCon Fall 2025 - YouTube — https://www.youtube.com/watch?v=M-zOSEJFNos
