@@ -4,7 +4,6 @@ tags:
   - publish
 status: to-duplicate
 ---
-
 This knowledge base is a public working notebook for AI-assisted software development.
 
 It focuses on practices that stay useful even as tools change: how to think, decide, and iterate when AI is part of the workflow.
@@ -35,3 +34,4 @@ Clarity and usefulness matter more than completeness.
 - [Ten Principles for Coding with AI](ten-principles-for-coding-with-ai.md)
 - [[Compounding Engineering Loop]]
 - [[Rebuild Threshold]]
+- [[Competitive Agentic Forking]]
