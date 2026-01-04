@@ -9,18 +9,19 @@ views:
     name: table
     filters:
       and:
-        - file.infolder("notes")
+        - file.inFolder("notes")
         - file.ext != "base"
+        - file.name != "README"
     order:
       - file.name
       - formula.short file name
       - status
       - tags
     sort:
+      - property: status
+        direction: DESC
       - property: file.name
         direction: DESC
-      - property: status
-        direction: ASC
     columnsize:
       file.name: 169
       formula.short file name: 466
