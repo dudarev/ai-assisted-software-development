@@ -19,7 +19,7 @@ As AI models become more capable of autonomous execution, the bottleneck in soft
 
 ![[Spec-Driven Development.svg]]
 
-1.  **Specification**: The human defines the requirements, architecture, edge cases, and success criteria (often in a Markdown file like `SPEC.md`).
+1.  **Specification**: The human defines the requirements, architecture, and success criteria in a technical specification document (e.g., `SPEC.md`), often using AI help to make sure the document is clear and complete.
 2.  **Execution**: An AI agent reads the spec and implements the changes across the codebase.
 3.  **Verification**: The human (or specialized sub-agents) verifies the implementation against the original spec using tests, visual reviews, or logs.
 
