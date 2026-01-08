@@ -25,6 +25,7 @@ Clarity and usefulness matter more than completeness.
 <!-- TODO: This can be done automatically and as a separate page. -->
 ## All Notes
 
+- [[Three Developer Loops of Vibe Coding]]
 - [[Agentic Coding]]
 - [Agent Skills](agent-skills.md)
 - [Agentic Harness](agentic-harness.md)
