@@ -17,6 +17,8 @@ status: published
 
 As AI models become more capable of autonomous execution, the bottleneck in software development shifts from **typing speed** to **clarity of intent**. SDD decouples "what to build" (human-led) from "how to build it" (agent-led).
 
+![[Spec-Driven Development.svg]]
+
 1.  **Specification**: The human defines the requirements, architecture, edge cases, and success criteria (often in a Markdown file like `SPEC.md`).
 2.  **Execution**: An AI agent reads the spec and implements the changes across the codebase.
 3.  **Verification**: The human (or specialized sub-agents) verifies the implementation against the original spec using tests, visual reviews, or logs.
