@@ -25,15 +25,16 @@ Clarity and usefulness matter more than completeness.
 <!-- TODO: This can be done automatically and as a separate page. -->
 ## All Notes
 
+- [[Spec-Driven Development]]
 - [[Three Developer Loops of Vibe Coding]]
 - [[Agentic Coding]]
-- [Agent Skills](agent-skills.md)
-- [Agentic Harness](agentic-harness.md)
-- [Four Modes of AI Assistance](four-modes-of-ai-assistance.md)
-- [Interview-Driven Specification](interview-driven-specification.md)
+- [[agent-skills|Agent Skills]]
+- [[agentic-harness|Agentic Harness]]
+- [[four-modes-of-ai-assistance|Four Modes of AI Assistance]]
+- [[Interview-Driven Specification]]
 - [[Measuring AI Assistant's Impact on Software Development Life Cycle]]
-- [Open AI Agent Standards](open-ai-agent-standards.md)
-- [Ten Principles for Coding with AI](ten-principles-for-coding-with-ai.md)
+- [[open-ai-agent-standards|Open AI Agent Standards]]
+- [[ten-principles-for-coding-with-ai|Ten Principles for Coding with AI]]
 - [[Compounding Engineering Loop]]
 - [[Rebuild Threshold]]
 - [[Competitive Agentic Forking]]
