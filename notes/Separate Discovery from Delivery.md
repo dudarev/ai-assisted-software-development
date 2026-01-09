@@ -5,6 +5,7 @@ tags:
   - principle
   - workflow
   - planning
+  - publish
 summary: Keep exploration and decision-making separate from execution to reduce scope creep and improve quality.
 status: draft
 ---
