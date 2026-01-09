@@ -15,7 +15,7 @@ shares: https://x.com/dudarev/status/2007110429420765495
 
 ![[Compounding Engineering Loop.svg]]
 
-Dan Shipper (Every) describes **compounding engineering** as an AI-native way of building software where each shipped feature makes the next feature easier (not harder).
+[Dan Shipper](https://x.com/danshipper) ([Every](https://every.to/)) describes **compounding engineering** as an AI-native way of building software where each shipped feature makes the next feature easier (not harder).
 
 The loop: **Plan → Delegate → Assess → Codify**
 
