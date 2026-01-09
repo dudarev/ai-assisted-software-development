@@ -5,6 +5,7 @@ tags:
   - testing
   - documentation
   - agentic-coding
+  - publish
 status: draft
 distilled:
   - "[[distilled/20260103-172544Z--markdown-test-suites-as-executable-specs-thread|20260103-172544Z--markdown-test-suites-as-executable-specs-thread]]"
