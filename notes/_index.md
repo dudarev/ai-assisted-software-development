@@ -35,6 +35,7 @@ Clarity and usefulness matter more than completeness.
 - [[Interview-Driven Specification]]
 - [[Measuring AI Assistant's Impact on Software Development Life Cycle]]
 - [[open-ai-agent-standards|Open AI Agent Standards]]
+- [[Separate Discovery from Delivery]]
 - [[ten-principles-for-coding-with-ai|Ten Principles for Coding with AI]]
 - [[Compounding Engineering Loop]]
 - [[Rebuild Threshold]]
