@@ -26,6 +26,7 @@ Clarity and usefulness matter more than completeness.
 ## All Notes
 
 - [[Spec-Driven Development]]
+- [[Executable Specs]]
 - [[Three Developer Loops of Vibe Coding]]
 - [[Agentic Coding]]
 - [[agent-skills|Agent Skills]]
