@@ -13,6 +13,27 @@ chats:
 ---
 # Tooling Chaos Monkey
 
+## Twitter thread draft
+<!--
+Tweet 1/5
+Tooling Chaos Monkey: practice chaos engineering on your developer toolchain. Intentionally swap or disable key tools so your workflow stays resilient - and you keep learning.
+
+Tweet 2/5
+Personal lesson: I spent years in Vim. Switching to a modern IDE took forever. Then I became a PyCharm power user. Last year, AI features arrived faster in VS Code (and many IDEs started as VS Code forks) - so I switched again.
+
+Tweet 3/5
+The takeaway: don’t wait until the ecosystem forces the change. Schedule small, controlled tool disruptions: editor/IDE, AI assistant, build runner, test framework, terminal setup, even OS-level shortcuts.
+
+Tweet 4/5
+Make it safe: keep configs in git, document the “minimum viable workflow”, use portable formats, and create quick checks:
+- Prevent: guardrails + defaults
+- Detect: fast verification
+- Correct: easy rollback/fallback
+
+Tweet 5/5
+Result: less lock-in, faster adaptation, fewer “tool outages” that kill momentum. Your toolchain becomes antifragile - it improves because you stress it on purpose.
+-->
+
 ## The Concept
 Applying the principles of Chaos Engineering to the developer toolchain. Just as Netflix's Chaos Monkey randomly terminates instances to ensure system resilience, a **Tooling Chaos Monkey** involves intentionally and regularly disrupting your own development environment—disabling or swapping out key tools—to ensure workflow independence and adaptability.
 
