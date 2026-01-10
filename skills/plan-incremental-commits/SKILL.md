@@ -56,6 +56,7 @@ Partition files into small clusters where each cluster answers a single â€œwhyâ€
 - Scratchpad/backlog updates (AR-style notes)
 
 Avoid mixing unrelated intents even if they are small.
+For notes: when files are not clearly about the same change or topic, split them into separate commits per note file.
 
 ### 3. Order commits dependency-first
 
