@@ -88,23 +88,26 @@ To address bottlenecks in traditional Agile ceremonies, a leading international 
 
 This connects well with [[Measuring AI Assistant's Impact on Software Development Life Cycle]]
 
-To evaluate enterprise-wide change, organizations should measure impact across three levels, not just adoption:
+The speakers argue for a holistic system that prioritizes **outcomes** (and supports fast course-correction), not just tool adoption. They describe an end-to-end chain of measures:
 
-**1. Inputs**
-*   **Tools**: Investment in coding assistants and other AI tools.
-*   **Enablement**: Time and resources dedicated to upskilling and change management (often overlooked but critical).
+**1. Inputs (investments)**
+*   **Tools**: Spend on coding assistants and other AI tooling across the SDLC.
+*   **Enablement**: Time, coaching capacity, and program investment for upskilling and change management.
 
-**2. Outputs (Technical & Human)**
-*   **Velocity**: Increased breadth and depth of adoption leading to capacity increases.
-*   **Developer Experience**: Developer NPS (joy of craft vs. frustration).
-*   **Quality & Security**: Code quality metrics and security posture.
-*   **Resiliency**: e.g., Mean Time To Resolve (MTTR) priority bugs.
+**2. Outputs (leading indicators + delivery capability)**
+*   **Adoption (leading indicator, not the goal)**: Breadth and depth of use across multiple SDLC use cases (not just point solutions like “only code review”).
+*   **Speed / delivery**: Capacity and delivery speed improvements (e.g., velocity, throughput, time to market).
+*   **Developer experience**: Developer NPS / sentiment (joy of craft vs. frustration).
+*   **Quality & security**: Whether code is becoming more secure, higher quality, and more consistent.
+*   **Resiliency proxy**: Mean time to resolve priority bugs (used as an indicator of resilience).
 
-**3. Economic Outcomes (Executive view)**
-*   **Time to Revenue**: Speed of realizing value.
-*   **Value Capture**: Price premiums for higher quality features or ability to meet increased customer demand.
-*   **Efficiency**: Cost reduction per pod (doing more with the same headcount).
-*   **Reinvestment**: Ability to shift savings into new greenfield/brownfield innovation.
+**3. Economic outcomes (executive view)**
+*   **Time to revenue**: How quickly changes translate into revenue impact.
+*   **Value capture**: Price differentials from higher-quality features; ability to serve/expand customers to meet feature demand.
+*   **Efficiency**: Cost reduction per pod (reduced human labor in aggregate).
+*   **Reinvestment**: How savings and time reclaimed get reinvested into greenfield and brownfield development.
+
+They also highlight a maturity gap: bottom performers often don’t measure speed at all, and only ~10% measure productivity (as reported in their survey). They note that the exact proxies will evolve as tools and workflows evolve, but this structure is a useful starting frame.
 
 ## Entities
 
