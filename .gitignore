@@ -4,6 +4,7 @@
 .obsidian
 
 # Local-only captures (keep folder markers + docs)
+Clippings/*
 raw/*
 !raw/README.md
 !raw/.gitkeep
