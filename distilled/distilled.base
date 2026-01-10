@@ -13,10 +13,13 @@ views:
         - file.ext != "base"
     order:
       - file.name
+      - file.mtime
       - formula.short file name
       - status
       - tags
     sort:
+      - property: file.mtime
+        direction: DESC
       - property: file.name
         direction: DESC
       - property: formula.short file name
@@ -27,4 +30,5 @@ views:
       file.name: 169
       formula.short file name: 466
     columnSize:
-      formula.short file name: 351
+      file.mtime: 114
+      formula.short file name: 298

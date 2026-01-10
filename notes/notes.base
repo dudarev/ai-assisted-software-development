@@ -6,12 +6,36 @@ formulas:
       .replace(/-/g, " ")
 views:
   - type: table
-    name: table
+    name: all
     filters:
       and:
         - file.inFolder("notes")
         - file.ext != "base"
         - file.name != "README"
+    order:
+      - file.name
+      - formula.short file name
+      - status
+      - tags
+    sort:
+      - property: status
+        direction: DESC
+      - property: file.name
+        direction: DESC
+    columnsize:
+      file.name: 169
+      formula.short file name: 466
+    columnSize:
+      formula.short file name: 230
+      note.status: 171
+  - type: table
+    name: not published
+    filters:
+      and:
+        - file.inFolder("notes")
+        - file.ext != "base"
+        - file.name != "README"
+        - '!file.tags.contains("publish")'
     order:
       - file.name
       - formula.short file name
