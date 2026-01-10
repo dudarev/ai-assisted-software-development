@@ -1,5 +1,8 @@
 ---
 status: ideation
+tags:
+  - patterns
+  - feedback-loops
 chats:
   - https://chatgpt.com/c/695a93d0-ce68-8325-ad19-35ad00afd2db
 ---
@@ -101,7 +104,7 @@ Optional tags:
 - [[pattern - fan-out and fuse]] - loop/? - type/?
 - [[pattern - competitive forking]] - loop/? - type/?
 - [[pattern - interview-first]] - loop/? - type/?
-- [[pattern - spec-first prompting]] - loop/? - type/?
+- [[Spec-Driven Development]] ([[pattern - spec-first prompting]]) - loop/middle - type/workflow
 - [[pattern - checkpointing]] - loop/? - type/?
 - [[pattern - AI-assisted PR review]] - loop/? - type/?
 - [[pattern - CI as an AI gate]] - loop/? - type/?
