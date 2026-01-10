@@ -5,6 +5,7 @@ tags:
   - chaos-engineering
   - developer-productivity
   - pattern
+  - publish
 status: ideation
 chats:
   - https://chatgpt.com/c/695bda6f-a844-832d-8b8b-96f9271d314e
