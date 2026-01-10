@@ -87,6 +87,7 @@ Skipping the line-by-line reading of every function in favor of "watching the st
 
 - Incorporate the "Zero-Cost Production" concept into [[Measuring AI Assistant's Impact on Software Development Life Cycle.md]].
 - Update [[Maker-Checker Pattern]] to reflect the extreme "Checker" shift described here.
+- Connect this orchestration/validation shift to [[Orchestrator vs. Executor]].
 
 ## Links
 
