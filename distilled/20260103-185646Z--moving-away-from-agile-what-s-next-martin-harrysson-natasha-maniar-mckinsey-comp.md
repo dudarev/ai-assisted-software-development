@@ -44,6 +44,7 @@ A way of working designed essentially for AI collaboration rather than human-onl
 
 **Orchestrator vs. Executor**
 The fundamental shift in the developer's role. An executor writes the logic line-by-line. An orchestrator defines the architecture and constraints, then prompts an agent to implement the details, reviewing the output.
+See also [[Orchestrator vs. Executor]].
 
 **Spec-Driven Development**
 Moving away from "User Stories" (which are often prose-heavy and imprecise) to rigorous "Specs" that agents can interpret and implement. This allows PMs and engineers to iterate on the requirements rather than just the code.

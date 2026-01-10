@@ -139,6 +139,7 @@ Automated note-takers produce summaries (quick read) and transcripts (higher con
 - Cross-reference with existing note on [four modes of AI assistance](../notes/four-modes-of-ai-assistance.md) — validate/extend the modes
 - Integrate "new teammate" mindset and context window management into [ten principles for coding with AI](../notes/ten-principles-for-coding-with-ai.md)
 - Explore connection to [agentic harness](../notes/agentic-harness.md) — how do these patterns inform harness design?
+- Connect the "executor → orchestrator" role shift framing to [Orchestrator vs. Executor](../notes/Orchestrator%20vs.%20Executor.md).
 - Consider creating standalone note on "quality guardrails for AI-assisted development" covering test pyramids, shift-left security, and metrics
 - Extract "Solution Consultant" role emergence as potential trend worth tracking separately
 - Follow the author's series — next post covers managing tech debt and developer experience with AI on the team

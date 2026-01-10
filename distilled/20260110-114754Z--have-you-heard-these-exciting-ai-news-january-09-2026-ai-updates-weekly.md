@@ -69,7 +69,7 @@ System architecture where LLM generates orchestration code to chunk, inspect, an
 AI systems trained on video and spatial data (not just text) to understand physical world dynamics, enabling planning, reasoning, and persistent memory over time.
 
 ### Speed-Optimized Organizations
-Organizational structure favoring flat hierarchies and small teams that optimize for shipping speed, creative iteration, and decision velocity over traditional coordination-heavy models.
+Organizational structure favoring flat hierarchies and small teams that optimize for shipping speed, creative iteration, and decision velocity over traditional coordination-heavy models. Related: [[Orchestrator vs. Executor]].
 
 ### Generative Engine Optimization (GEO)
 Content optimization for AI chatbot citations (vs traditional SEO) using structured formatting, concise answers, authority signals, topic clusters, and freshness signals.

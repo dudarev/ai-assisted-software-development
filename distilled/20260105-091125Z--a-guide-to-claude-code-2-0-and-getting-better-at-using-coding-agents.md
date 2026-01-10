@@ -84,6 +84,7 @@ A comprehensive guide to utilizing Claude Code 2.0 and Opus 4.5 for software dev
 
 - Integrate "Context Engineering" and "Attention Budget" principles into `notes/agentic-workflows.md`.
 - Create a `notes/sub-agent-specialization.md` exploring the Explore/Plan/Guide pattern.
+- Connect the Explore/Plan/Guide split to `notes/Orchestrator vs. Executor.md`.
 - Research "Context Rot" more deeply to determine optimal compaction thresholds for Antigravity's own workflows.
 
 ## Links

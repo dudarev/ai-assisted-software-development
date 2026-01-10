@@ -121,6 +121,7 @@ Product strategy should assume model capabilities will shift quickly: build “s
 
 - Convert the “isolation + reversibility” idea into a standalone reliability note (agent-safe boundaries, rollback design).
 - Capture a pattern note on verifier loops (coding agent + testing agent + feedback) and when to use programmatic vs. vision-based “computer use”.
+- Connect the “executor vs orchestrator” framing to `notes/Orchestrator vs. Executor.md`.
 - Cross-link to notes about roadmap volatility and “build semi-working products” as a strategy for model-driven markets.
 
 ## Links

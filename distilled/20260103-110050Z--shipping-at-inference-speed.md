@@ -85,6 +85,7 @@ Peter Steinberger argues that, compared to earlier in 2025, agentic coding has s
 
 - Consider integrating “inference-limited development” and “CLI as harness” into `notes/Agentic Coding.md`.
 - Cross-link to `notes/agentic-harness.md` for patterns about closing the loop via executable interfaces.
+- Connect the “execution vs orchestration” role shift framing to `notes/Orchestrator vs. Executor.md`.
 - Capture a small checklist for “agent-friendly codebase design” (folder conventions, docs hygiene, dependency selection heuristics).
 - We can also cross-link it to agent skills because this is something that's relevant to that pattern of cross project pattern propagation. skills can be copied from one place to another.
 
