@@ -25,6 +25,8 @@ Clarity and usefulness matter more than completeness.
 <!-- TODO: This can be done automatically and as a separate page. -->
 ## All Notes
 
+[Browse by tags](/tags/)
+
 - [[Discovering New AI Tools]]
 - [[Spec-Driven Development]]
 - [[Executable Specs]]
