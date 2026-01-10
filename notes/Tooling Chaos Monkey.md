@@ -13,8 +13,8 @@ chats:
 ---
 # Tooling Chaos Monkey
 
-## Twitter thread draft
 <!--
+## Twitter thread draft
 Tweet 1/5
 Tooling Chaos Monkey: practice chaos engineering on your developer toolchain. Intentionally swap or disable key tools so your workflow stays resilient - and you keep learning.
 
