@@ -11,6 +11,7 @@ chats:
   - https://chatgpt.com/c/695bda6f-a844-832d-8b8b-96f9271d314e
   - https://chatgpt.com/c/695bd593-66f8-8327-b1c9-5a17d0e74dcb
   - https://chatgpt.com/c/695acb41-70e0-8333-ad08-551ec057556e
+shares: https://x.com/dudarev/status/2009982456506790077
 ---
 # Tooling Chaos Monkey
 
@@ -36,7 +37,7 @@ Result: less lock-in, faster adaptation, fewer “tool outages” that kill mome
 -->
 
 ## The Concept
-Applying the principles of Chaos Engineering to the developer toolchain. Just as Netflix's Chaos Monkey randomly terminates instances to ensure system resilience, a **Tooling Chaos Monkey** involves intentionally and regularly disrupting your own development environment—disabling or swapping out key tools—to ensure workflow independence and adaptability.
+Applying the principles of Chaos Engineering to the developer toolchain. Just as Netflix's [Chaos Monkey](https://github.com/Netflix/chaosmonkey) randomly terminates instances to ensure system resilience, a **Tooling Chaos Monkey** involves intentionally and regularly disrupting your own development environment—disabling or swapping out key tools—to ensure workflow independence and adaptability.
 
 ## Why Do It?
 1.  **Prevent Lock-in**: Deep reliance on a specific tool (e.g., a specific AI coding assistant's proprietary features) creates a vulnerability. If that tool changes pricing, disappears, or degrades, your productivity shouldn't crash.
