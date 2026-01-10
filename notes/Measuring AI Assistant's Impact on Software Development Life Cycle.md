@@ -7,8 +7,6 @@ tags:
   - productivity
   - dora
 summary: Principles, approaches, and measurement strategies for evaluating the impact of AI assistance across the full software development life cycle.
-distilled:
-  - "[[distilled/20260102-101605Z--measuring-impact-ai-software-engineering|20260102-101605Z--measuring-impact-ai-software-engineering]]"
 status: edit
 ---
 
@@ -62,6 +60,7 @@ A comprehensive measurement approach covers utilization, impact, and cost:
 
 **2. Impact**
 - Developer experience index (composite metric tracking satisfaction, effectiveness, flow)
+- **Interruption Rate**: Frequency of manual human intervention in agentic workflows (analogous to autonomous vehicle disengagements).
 - Velocity and throughput metrics
 - Quality and stability indicators
 - Complexity and scope of work tackled
