@@ -46,11 +46,20 @@ When adding new material:
 
 When working with notes (in `notes/` directory):
 - Keep notes self-contained and publishable
-- Do not include links to `raw/` or `distilled/` files in the note content
-- Source references belong in the frontmatter `distilled` property, not in the body
+- Do not reference or link to `distilled/` or `raw/` content from the notes (this includes the body and frontmatter properties). Nodes must be entirely self-contained.
+- Use the original sources (articles, threads, etc.) if referencing external work, adding your own synthesis and comments.
 - Link only to public external resources (articles, papers, podcasts) in the References section
 - Notes should be readable and useful without access to the capture/distillation pipeline
 - Avoid redundant tags: since the entire repository focuses on AI-assisted software development, do not tag notes with generic terms like "ai-assisted-development"—use specific, descriptive tags instead
+
+## Voice Dictation & Transcription
+
+Prompts are frequently voice-dictated. Agents must:
+1. **Account for transcription errors** contextually.
+2. **Update this section** with new common mistranscriptions if the user corrects them.
+
+**Common mistranscriptions:**
+- "node" -> "note"
 
 ## Authority model
 
