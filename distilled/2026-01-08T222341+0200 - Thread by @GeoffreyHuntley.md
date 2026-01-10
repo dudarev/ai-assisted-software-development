@@ -36,6 +36,7 @@ Geoffrey Huntley highlights a major shift in software engineering practices that
 - **y/n Mode**: Manual confirmation bottlenecks in AI agent workflows.
 - **High-Performance Claude Code Usage**: Concurrent execution of multiple agent instances to solve complex problems or build systems.
 - **Claude Code Stop Hooks**: Technical mechanisms that facilitate iterative agentic workflows.
+- **Orchestrator vs. Executor**: A useful framing for the role shift implied by parallel agent execution; see [[Orchestrator vs. Executor]].
 
 # Patterns
 
