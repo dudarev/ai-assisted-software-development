@@ -4,6 +4,8 @@ This note is based on the ideas described in [The append-and-review note | karpa
 
 ---
 
+An idea about creating images with Open Graph Standard that capture summary of the text that's described in the node and doing it automatically It can be part of the front matter and the front matter also can be used to update the description HTML tag or whatever tag is missing.
+
 [Coding with AI // Chip Huyen - YouTube](https://www.youtube.com/watch?v=xY1FcjIbErQ) - Mentioned as the best keynote in MLOps community. 
 
 “coding genie” analogy (Ken Beck) – powerful but mischievous: often “mostly works,” so you must tame it. As mentioned by Lada Kesseler https://www.youtube.com/watch?v=_LSK2bVf0Lc 
