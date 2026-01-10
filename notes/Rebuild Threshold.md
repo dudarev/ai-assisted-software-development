@@ -8,8 +8,6 @@ tags:
   - migrations
   - engineering-economics
 summary: A decision point where rebuilding (often in parallel) becomes lower-risk than in-place refactoring.
-distilled:
-  - "[[distilled/20260103-151353Z--why-ai-development-tools-are-about-to-shift|20260103-151353Z--why-ai-development-tools-are-about-to-shift]]"
 status: share
 chats:
   - https://grok.com/c/047112e7-e208-4d9d-9a53-ca2637295a01?rid=9819da04-a891-4b09-a578-715aa57b2a93
@@ -98,6 +96,8 @@ You have a tightly coupled “pricing” module inside a monolith. Every change 
 
 ## Related patterns
 
+- [[Spec-Driven Development]]: Using a spec to drive a clean-slate implementation.
+- **Burn and Rebuild**: A specific version of SDD where you intentionally discard a messy or overly complex implementation and have an agent regenerate it from a verified spec.
 - Strangler Fig (incremental replacement)
 - Branch by Abstraction (decouple to enable swap)
 - Characterization (“golden master”) testing (snapshot behavior as spec)
@@ -108,4 +108,5 @@ You have a tightly coupled “pricing” module inside a monolith. Every change 
 - Martin Fowler (2004), “Strangler Fig Application” (incremental replacement technique): https://martinfowler.com/bliki/StranglerFigApplication.html
 - Paul Hammant (2007), “Branch by Abstraction” (run old/new behind an abstraction to enable swapping): https://trunkbaseddevelopment.com/branch-by-abstraction/
 - Michael Feathers (2004), *Working Effectively with Legacy Code* (characterization tests as a safety net): https://www.goodreads.com/book/show/44919.Working_Effectively_with_Legacy_Code
+- Chip Huyen (2025), “Coding with AI” (YouTube; mentions “Burn and Rebuild” for clearing agent-created messes): https://www.youtube.com/watch?v=xY1FcjIbErQ
 - “Why AI Development Tools Are About to Shift” (2026; YouTube; mentions “migrations” shifting toward rebuild/replace): https://www.youtube.com/watch?v=0hpn9mn9vSs
