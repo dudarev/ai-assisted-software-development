@@ -60,7 +60,7 @@ As implementation gets delegated, confidence shifts from authorship (“I wrote 
 
 ## Related Concepts
 
-- [[vibe-coding-is-faafo|Vibe Coding]] – The high-level, intent-driven mode of the Maker role.
+- [[Vibe Coding Is FAAFO|Vibe Coding]] – The high-level, intent-driven mode of the Maker role.
 - [[Spec-Driven Development]] – Converting intent into a checkable contract before implementation.
 - [[Executable Specs]] – Turning requirements into runnable tests.
 - [[Three Developer Loops of Vibe Coding]] – Selecting practices based on the feedback-loop timescale.

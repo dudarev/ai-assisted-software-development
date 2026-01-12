@@ -19,7 +19,7 @@ Lada Kesseler semantic zoom - Google Search — https://www.google.com/search?q=
 Lada Kesseler - Emerging Patterns for Coding with Generative AI | DevCon Fall 2025 - YouTube — https://www.youtube.com/watch?v=M-zOSEJFNos
 https://github.com/lexler/Talks/blob/main/augmented_coding_patterns_masterclass.md - "map" of patterns
 
-[faafo vibe - Search / X](https://x.com/search?q=faafo%20vibe&src=typed_query&f=live) - related to [[vibe-coding-is-faafo]]
+[faafo vibe - Search / X](https://x.com/search?q=faafo%20vibe&src=typed_query&f=live) - related to [[Vibe Coding Is FAAFO]]
 Also link that note from index .
 
 Think about creating an automatic page with a list of all the notes.

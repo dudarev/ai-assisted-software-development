@@ -161,5 +161,5 @@ https://itrevolution.com/product/vibe-coding-book/
 Has a measurement toolkit
 https://itrevolution.com/wp-content/uploads/2025/02/FAAFO-Measurement-Toolkit.pdf
 Connect this to FAAFO note
-vibe-coding-is-faafo.md
+Vibe Coding Is FAAFO.md
 -->

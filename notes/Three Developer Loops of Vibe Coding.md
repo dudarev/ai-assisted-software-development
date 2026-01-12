@@ -30,7 +30,7 @@ Across all three loops, apply the same control logic:
 ---
 ## Inner loop (seconds to minutes)
 
-*Practical interpretation: Inner-loop patterns optimize for speed. Keep changes small, ensure a recovery path, and verify continuously to stay in the [[vibe-coding-is-faafo|Flow]].*
+*Practical interpretation: Inner-loop patterns optimize for speed. Keep changes small, ensure a recovery path, and verify continuously to stay in the [[Vibe Coding Is FAAFO|Flow]].*
 
 ### Prevent
 - **Decompose and Subdivide**: Break every task into the smallest possible steps to maintain clarity and prevent the AI from generating "creative" but unmanageable messes.
@@ -73,7 +73,7 @@ Across all three loops, apply the same control logic:
 ### Prevent
 - **Preserve Bridges (API First)**: Enforce strict API boundaries. AI should optimize implementations but never "torch the bridge" by breaking existing interfaces without explicit approval.
 - **Partition the Workspace**: Establish "Clean Room" boundaries between system components to prevent agents from creating "stewnamis" (cross-system dependencies that break modularity).
-- **Optimize for Option Value**: Lean into modularity. The more decoupled your system, the more [[vibe-coding-is-faafo|Optionality]] you have to replace entire modules at "inference speed."
+- **Optimize for Option Value**: Lean into modularity. The more decoupled your system, the more [[Vibe Coding Is FAAFO|Optionality]] you have to replace entire modules at "inference speed."
 
 ### Detect
 - **Augment CI/CD with AI Gates**: Use AI-powered review bots to enforce architecture standards, security rules, and "drift detection" during the merge process.
