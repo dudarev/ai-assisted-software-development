@@ -40,7 +40,7 @@ Across all three loops, apply the same control logic:
 ### Detect
 - **Verify All Claims**: Never trust an AI saying "all tests pass." Independently verify results and have the AI prove its work with specific outputs.
 - **Practice Active Vigilance**: Watch for "context drift"—signs the AI is forgetting instructions or heading down a rabbit hole. Redirect the moment you see confusion.
-- **Drive with Tests**: Use [[maker-checker-pattern|TDD-style]] feedback; write (or have AI write) failing tests before implementation to create immediate signal.
+- **Drive with Tests**: Use [[Maker-Checker Pattern|maker-checker]] feedback; write (or have AI write) failing tests before implementation to create immediate signal.
 
 ### Correct
 - **Fix Forward or Roll Back**: Decide in seconds whether to debug or revert. If the AI is stuck in a "debugging loop," favor rolling back to your last clean checkpoint.

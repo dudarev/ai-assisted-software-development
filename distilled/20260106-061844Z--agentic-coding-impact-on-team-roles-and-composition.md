@@ -94,7 +94,7 @@ Prioritizing modular documentation and structured rules (e.g., `Cursor Rules`, `
 - Integrate the "Solution Consultant" role definition into notes on future team structures.
 - Create a standalone note on the "Process Bottleneck" (technology speed vs. organizational friction).
 - Update the "Ten Principles for AI-Assisted Development" to include transition patterns for role merging.
-- Explore the [[notes/maker-checker-pattern|Maker-Checker Pattern]] as a primary operational model.
+- Explore the [[Maker-Checker Pattern]] as a primary operational model.
 - Connect the role transformation framing to [[Orchestrator vs. Executor]].
 
 ## Links
