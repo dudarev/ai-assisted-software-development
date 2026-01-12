@@ -39,6 +39,15 @@ When creating or modifying content:
 - Avoid exposing private information (private repository names, local file paths, personal data)
 - Link to public resources when referencing external concepts or workflows
 
+### Distillations: raw → distilled references
+
+When you create a new `distilled/…` note from a `raw/…` note, reference the distilled note from the raw note’s front matter (instead of a body section), e.g.:
+
+```yaml
+distilled_refs:
+  - "[[distilled/<new-note>.md]]"
+```
+
 When adding new material:
 - Start minimal
 - Leave room for future refinement
