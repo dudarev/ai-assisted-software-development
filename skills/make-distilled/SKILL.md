@@ -1,6 +1,6 @@
 ---
 name: make-distilled
-description: Transform raw captured content into distilled knowledge by extracting summary, key points, principles, patterns, entities, and quotes, storing the result in the distilled/ directory.
+description: Transform raw captured content into distilled knowledge by extracting topics (outline), summary, key points, principles, patterns, entities, and quotes, storing the result in the distilled/ directory.
 ---
 
 # Make Distilled Content
@@ -52,6 +52,11 @@ This skill produces:
 ### 2. Generate distilled content structure
 
 Extract and organize the following elements from the raw content:
+
+**Topics / outline** (5-15 bullets)
+- What gets discussed, in order
+- Prefer timestamped bullets when the source provides timestamps (common for videos)
+- Keep this distinct from “Key points” (outline is coverage; key points are takeaways)
 
 **Summary** (5-10 lines)
 - Concise overview of the main topic and purpose
@@ -142,6 +147,12 @@ Combine the extracted elements into this structure:
 ## Summary
 
 <5-10 line summary>
+
+## Topics
+
+- <topic 1>
+- <topic 2>
+- ...
 
 ## Key points
 
@@ -280,8 +291,9 @@ raw_paths:
 1. Read the transcript
 2. Extract main themes (often less linear than written content)
 3. Identify practical advice vs. theoretical discussion
-4. Note any tools or frameworks mentioned
-5. Flag areas where transcript was unclear or incomplete
+4. Build a topic outline (timestamped if present in the source)
+5. Note any tools or frameworks mentioned
+6. Flag areas where transcript was unclear or incomplete
 
 **Output:**
 - Creates `distilled/20260105-140000Z--building-production-agents.md`
