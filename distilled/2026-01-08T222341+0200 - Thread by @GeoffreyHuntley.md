@@ -2,7 +2,7 @@
 title: "Thread by @GeoffreyHuntley"
 source: "https://x.com/GeoffreyHuntley/status/2009136765127545240"
 author:
-  - "[[@GeoffreyHuntley]]"
+  - "@GeoffreyHuntley"
 published: 2026-01-08
 created: 2026-01-08
 description: "Geoffrey Huntley discusses the paradigm shift in software engineering caused by agentic coding, introducing 'Ralphing' and high-performance Claude Code usage."
