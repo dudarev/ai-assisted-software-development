@@ -1,5 +1,18 @@
+---
+title: Spec Branch Flow
+tags:
+  - workflow
+  - git
+  - specification
+  - documentation
+  - publish
+summary: A git branching strategy using a parallel 'spec' branch to iterate on messy specifications without polluting the main codebase, enabling seamless context injection for AI agents.
+status: published
+created: 2026-01-15
+---
 # Spec Branch Flow
 
+![[spec-branch-flow.svg]]
 **Spec Branch Flow** is a branching strategy designed to keep the `main` codebase clean while allowing for messy, iterative exploration of specifications, PRDs, and documentation in a parallel track.
 
 ## The Problem
