@@ -1,0 +1,90 @@
+<svg width="850" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Arrowhead marker -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555" />
+    </marker>
+    <style>
+      text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+      .branch-label { font-weight: bold; font-size: 14px; text-anchor: end; }
+      .note { font-size: 12px; fill: #444; text-anchor: middle; font-weight: 500; }
+    </style>
+  </defs>
+
+  <!-- SOLID WHITE BACKGROUND -->
+  <rect x="0" y="0" width="850" height="400" fill="white" />
+
+  <!-- TRACKS (Lines) -->
+  <!-- Spec (Top) - Full Width -->
+  <line x1="140" y1="60" x2="820" y2="60" stroke="#E1BEE7" stroke-width="6" />
+  
+  <!-- Main (Bottom) - Full Width -->
+  <line x1="140" y1="300" x2="820" y2="300" stroke="#BBDEFB" stroke-width="6" />
+
+  <!-- Feature (Middle) - Finite Length (Starts at 'Start Feature', Ends at 'Merge') -->
+  <line x1="370" y1="180" x2="700" y2="180" stroke="#C8E6C9" stroke-width="6" stroke-linecap="round" />
+
+  <!-- LABELS -->
+  <text x="130" y="65" class="branch-label" fill="#8E24AA">spec</text>
+  <text x="130" y="305" class="branch-label" fill="#1565C0">main</text>
+  <!-- Feature label placed near the start of the branch -->
+  <text x="360" y="185" class="branch-label" fill="#2E7D32">feature</text>
+
+  <!-- CONNECTIONS (Paths) -->
+  <!-- 1. Initial Sync (Main -> Spec) -->
+  <path d="M 170 300 Q 170 200 210 60" stroke="#8E24AA" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <!-- MOVED RIGHT: x from 200 to 220 -->
+  <text x="235" y="150" class="note" fill="#8E24AA">Base Sync</text>
+
+  <!-- 3. Start Feature (Main -> Feature) -->
+  <path d="M 330 300 C 330 250, 370 250, 370 188" stroke="#2E7D32" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <text x="410" y="240" class="note">Start Feature</text>
+
+  <!-- 4. Inject Spec (Spec -> Feature) -->
+  <path d="M 450 68 L 450 172" stroke="#E65100" stroke-width="2" stroke-dasharray="4,4" marker-end="url(#arrowhead)" />
+  <rect x="380" y="105" width="140" height="24" rx="4" fill="#FFF3E0" stroke="#E65100" />
+  <text x="450" y="121" class="note" fill="#E65100">Inject Spec Context</text>
+
+  <!-- 6. Merge (Feature -> Main) -->
+  <path d="M 700 180 C 700 230, 740 230, 740 292" stroke="#1565C0" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <!-- MOVED BACK LEFT: x from 705 to 692 -->
+  <text x="692" y="240" class="note">Merge</text>
+
+  <!-- 7. Sync (Main -> Spec) -->
+  <path d="M 760 300 C 780 200, 780 150, 800 68" stroke="#8E24AA" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <text x="815" y="160" class="note">Sync</text>
+
+  <!-- OBJECTS/NOTE TEXT (Non-overlap layer) -->
+  <!-- 2. Draft Text -->
+  <text x="270" y="40" class="note">Drafting Specs</text>
+
+  <!-- 5. Implement Box -->
+  <rect x="500" y="160" width="160" height="40" rx="8" fill="#A5D6A7" stroke="#2E7D32" />
+  <text x="580" y="185" class="note" fill="#000">Implement &amp; Refine</text>
+
+  <!-- COMMIT DOTS (Circles) - Rendered LAST to be ON TOP of lines -->
+  
+  <!-- Base Sync Dots -->
+  <circle cx="170" cy="300" r="8" fill="#1565C0" />
+  <circle cx="210" cy="60" r="8" fill="#8E24AA" />
+
+  <!-- Draft Dot -->
+  <circle cx="270" cy="60" r="8" fill="#8E24AA" />
+
+  <!-- Start Feature Dots -->
+  <circle cx="330" cy="300" r="8" fill="#1565C0" />
+  <circle cx="370" cy="180" r="8" fill="#2E7D32" />
+
+  <!-- Inject Spec Dots -->
+  <circle cx="450" cy="60" r="8" fill="#8E24AA" />
+  <circle cx="450" cy="180" r="8" fill="#2E7D32" />
+
+  <!-- Merge Dots -->
+  <circle cx="700" cy="180" r="8" fill="#2E7D32" />
+  <circle cx="740" cy="300" r="8" fill="#1565C0" />
+
+  <!-- Final Sync Dots -->
+  <circle cx="760" cy="300" r="8" fill="#1565C0" />
+  <circle cx="800" cy="60" r="8" fill="#8E24AA" />
+
+</svg>
