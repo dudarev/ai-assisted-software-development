@@ -43,3 +43,5 @@ Clarity and usefulness matter more than completeness.
 - [[Compounding Engineering Loop]]
 - [[Rebuild Threshold]]
 - [[Competitive Agentic Forking]]
+- [[Spec Branch Flow]]
+
