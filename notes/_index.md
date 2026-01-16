@@ -44,4 +44,8 @@ Clarity and usefulness matter more than completeness.
 - [[Rebuild Threshold]]
 - [[Competitive Agentic Forking]]
 - [[Spec Branch Flow]]
+- [[Disposable Software]]
+- [[Vibe Coding Is FAAFO]]
+- [[File over App]]
+- [[Maker-Checker Pattern]]
 
