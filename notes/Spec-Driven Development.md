@@ -35,6 +35,7 @@ As AI models become more capable of autonomous execution, the bottleneck in soft
 - [[Interview-Driven Specification]]: Using an AI agent to "interview" you to extract the necessary details for a complete spec.
 - **Burn and Rebuild**: If a part of the codebase is too messy for an agent to fix, use SDD to describe the desired state and have the agent rewrite the module from scratch. Often triggered when the system passes a certain [[Rebuild Threshold]].
 - [[Executable Specs]]: Writing expectations directly into the spec so that the agent can self-verify its work.
+- [[File over App]]: Why specs should live as local markdown files rather than in cloud silos.
 
 ## References
 
