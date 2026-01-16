@@ -55,7 +55,9 @@ When adding new material:
 
 When working with notes (in `notes/` directory):
 - Keep notes self-contained and publishable
-- Do not reference or link to `distilled/` or `raw/` content from the notes (this includes the body and frontmatter properties). Nodes must be entirely self-contained.
+- Do not reference or link to `distilled/` or `raw/` content from the **body** of the notes. 
+- However, linking to `distilled/` notes from the **front matter** (using a property like `distilled_refs`) is encouraged to maintain the link to the original derivation.
+- Nodes must be publishable to the web without the internal `distilled/` folder, which is why the body remains clean of internal links.
 - Use the original sources (articles, threads, etc.) if referencing external work, adding your own synthesis and comments.
 - Link only to public external resources (articles, papers, podcasts) in the References section
 - Notes should be readable and useful without access to the capture/distillation pipeline
@@ -67,8 +69,8 @@ Prompts are frequently voice-dictated. Agents must:
 1. **Account for transcription errors** contextually.
 2. **Update this section** with new common mistranscriptions if the user corrects them.
 
-**Common mistranscriptions:**
-- "node" -> "note"
+**Common mistranscriptions & terminology:**
+- "node" / "note": These are used interchangeably. When the user says "node", they usually mean a permanent "note" in the `notes/` directory.
 
 ## Authority model
 
