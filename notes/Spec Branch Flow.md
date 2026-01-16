@@ -9,10 +9,44 @@ tags:
 summary: A git branching strategy using a parallel 'spec' branch to iterate on messy specifications without polluting the main codebase, enabling seamless context injection for AI agents.
 status: published
 created: 2026-01-15
+shares: https://x.com/dudarev/status/2012076390959759609
 ---
+
 # Spec Branch Flow
 
 ![[spec-branch-flow.svg]]
+
+<!--
+TWITTER THREAD DRAFT:
+
+1/ I've been experimenting with a branching strategy I call "Spec Branch Flow," and it's been working really well for me. 
+
+It’s a simple way to keep messy drafts in the repo without cluttering the main history. 🧵
+
+(Attach Diagram)
+
+2/ The problem I often had: 
+Drafting specs is messy. Iteration is fast. 
+If I commit them to `main`, the history gets noisy. 
+If I keep them in Notion or Google Docs, my AI tools lose context or work on outdated info.
+
+3/ How I've been doing it:
+1️⃣ Keep a long-lived `spec` branch for all the messy work.
+2️⃣ Regularly sync `main` -> `spec` to keep things compatible.
+3️⃣ When implementing, I just pull the specific spec: 
+`git checkout spec -- path/to/spec.md`
+
+4/ The best part:
+As I build the feature and find edge cases, I update the spec file directly in my feature branch. 
+
+When I merge to `main`, that spec becomes "System Documentation" that actually matches what I built. ✨
+
+5/ It’s been a great way to bridge the gap between "what I thought I wanted" and "what I actually shipped" with almost zero friction.
+
+Full breakdown of the workflow here:
+https://ai-assisted-software-development.com/notes/spec-branch-flow/
+-->
+
 **Spec Branch Flow** is a branching strategy designed to keep the `main` codebase clean while allowing for messy, iterative exploration of specifications, PRDs, and documentation in a parallel track.
 
 ## The Problem
@@ -53,3 +87,8 @@ This flow is a guideline, not a strict rule.
 *   If a spec covers multiple features, you might check it out, partially implement it, and only commit the relevant sections.
 *   Teams should adjust the "strictness" of the main-to-spec sync based on their cadence.
 
+## Related Links
+
+*   [[Separate Discovery from Delivery]]: Explains the rationale for decoupling experimentation and requirement gathering from the actual implementation phase.
+*   [[Spec-Driven Development]]: The foundational philosophy that treats specifications as the primary source of truth for AI agents.
+*   [[Executable Specs]]: Explores how these synced specs can evolve into automated test suites or verification scripts.
