@@ -5,5 +5,4 @@ chats:
   - https://notebooklm.google.com/notebook/351d26a4-a54b-42a1-a376-d5bde1e07f60
 status: ideation
 ---
-
-<!-- TODO: Also analyze all the distilled nodes that have the related ideas in addition to those notebooks and chats in Gemini and ChangeGPT. -->
+<!-- TODO: Also analyze all the distilled notes that have the related ideas in addition to those notebooks and chats in Gemini and ChangeGPT. -->
