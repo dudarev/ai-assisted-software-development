@@ -51,6 +51,10 @@ Use your current AI agent to find its competitors. Agents are often better at pa
 **Prompt Template:**
 > "I am currently using [Tool X] for [Specific Workflow]. My stack is [Language/Framework]. Analyze the current trending AI coding agents on GitHub and OpenRouter. Look for emerging tools that specialize in [Specific Pain Point, e.g., long-context maintenance or terminal autonomy]. Compare them to my current tool and highlight any architectural shifts (e.g., transition from chat-based to agentic)."
 
+### Recipe 4: The Curated Curator (Meta-Discovery)
+Instead of drinking from the firehose, subscribe to high-signal curators who filter for *utility* rather than just *novelty*.
+*   **[Lev Selector](https://www.youtube.com/@levselector) (AI Updates Weekly)**: Focuses heavily on *practical* tools (Cline, VS Code extensions) and agentic workflows.
+
 ## The Execution: The Discovery Loop
 
 1.  **Passive Discovery**: Keep a "Candidates" list in your notes. Whenever you see a high-signal mention in a repo or a leaderboard, add it.
