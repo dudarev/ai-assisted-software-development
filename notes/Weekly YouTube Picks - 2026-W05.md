@@ -4,6 +4,7 @@ tags:
   - weekly
   - youtube
   - agentic-workflows
+  - publish
 status: published
 note: This week's picks focus on advanced agentic workflows, AI-assisted coding, and the evolving role of developers in an AI-driven world.
 ---
