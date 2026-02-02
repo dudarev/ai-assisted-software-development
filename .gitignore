@@ -8,3 +8,5 @@ Clippings/*
 raw/*
 !raw/README.md
 !raw/.gitkeep
+
+tmp/
