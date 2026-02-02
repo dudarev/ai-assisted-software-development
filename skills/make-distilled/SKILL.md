@@ -41,7 +41,7 @@ This skill produces:
 - Use the `read_file` tool to load each raw file content
 - Parse front matter from each raw file to extract:
   - `title`
-  - `source_url`
+  - `source_url` (check `source`, `url`, or `link` fields in raw front matter)
   - `captured_at`
   - `capture_type`
   - `author` (if available)
@@ -108,7 +108,7 @@ Create YAML front matter for the distilled file:
 ```yaml
 ---
 title: "<original title> (or improved title if clearer)"
-source_url: "<primary source URL (optional)>"
+source_url: "<primary external source URL (e.g. https://x.com/...) - extracted from raw file 'source' or 'url' field>"
 captured_at: "<captured_at from a representative raw file>"
 distilled_at: "<current ISO timestamp UTC>"
 raw_refs:
