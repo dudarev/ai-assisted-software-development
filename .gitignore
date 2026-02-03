@@ -10,3 +10,4 @@ raw/*
 !raw/.gitkeep
 
 tmp/
+.python-version
