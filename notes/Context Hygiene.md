@@ -5,8 +5,8 @@ tags:
   - agentic-workflows
   - best-practices
   - context-management
+  - publish
 ---
-
 # Context Hygiene
 
 **Context Hygiene** is the disciplined practice of managing an LLM's context window to maintain agent performance, accuracy, and efficiency. As context windows grow, the temptation is to "stuff" them, but practical experience shows that "context pollution" degrades reasoning capabilities.
@@ -36,7 +36,7 @@ Instead of relying on the chat history (which gets compacted or truncated), push
 *   **Compaction:** Long-running sessions often "compact" or summarize history to save tokens. This can result in the loss of critical instructions or state if that state isn't preserved in the file system.
 
 ## References
-*   **Video:** [Fundamental Knowledge SWE's in 2026 Must Have (Hiring Bar)](https://www.youtube.com/watch?v=F5wxBoGSWtk) by Geoffrey Huntley.
+*   **Video:** [Fundamental Knowledge SWE's in 2026 Must Have (Hiring Bar)](https://www.youtube.com/watch?v=F5wxBoGSWtk) by [[Geoffrey Huntley]].
 *   **Related Note:** [[Ralph Wiggum Loop – January 2026 Snapshot]] - Discusses context hygiene in the context of autonomous loops.
 *   **Related Note:** [[Compounding Engineering Loop]] - References the importance of resetting context.
 *   **Video:** [pi - a radically minimal, opinionated multi-model coding agent](https://www.youtube.com/watch?v=4p2uQ4FQtis) (Creator of Pi agent).
