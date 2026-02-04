@@ -33,8 +33,7 @@ When a user says "Land the plane," the agent executes a scripted checklist to sa
 This prompt effectively "bridges" the context gap, allowing the next session to pick up exactly where the last one left off without re-reading the entire history.
 
 ## Application
-This pattern is critical for **Context Hygiene**, allowing developers to run shorter, focused sessions ("one task per context window") without losing momentum.
+This pattern is critical for [[Context Hygiene]], allowing developers to run shorter, focused sessions ("one task per context window") without losing momentum.
 
 ## References
-*   **Source:** [[distilled/20260203-223342Z--beads-session-memory-task-management-for-agents.md]]
 *   **Related Note:** [[Context Hygiene]]
