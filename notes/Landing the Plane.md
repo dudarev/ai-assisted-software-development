@@ -1,12 +1,12 @@
 ---
-title: "Landing the Plane"
+title: Landing the Plane
 tags:
   - workflow
   - agentic-coding
   - context-management
   - beads
+  - publish
 ---
-
 # Landing the Plane
 
 **Landing the Plane** is a session termination protocol for AI agents, formalized by Steve Yegge (creator of the **Beads** framework). It addresses the "amnesia" problem where agents lose context between sessions and leave "crap" (temporary artifacts) behind.
