@@ -32,6 +32,14 @@ note: This week's picks focus on durable agent workflows (memory, context hygien
 
 *   **[The Third Golden Age of Software Engineering – Thanks to AI, with Grady Booch](https://www.youtube.com/watch?v=OfMAtaocvJw)** — Booch frames AI as another abstraction jump: it automates transcription (coding) while raising the premium on engineering judgment—systems thinking, trade-offs, and ethics. Good pushback against “engineers are obsolete” narratives, and a reminder that the work tends to move *up* the stack.
 
+*   **[Pi - The AI Harness That Powers OpenClaw](https://www.youtube.com/watch?v=AEmHcFH1UgQ)** — A strong case for minimal agent harnesses (“bash + files” + a loop) and a sober reminder that prompt-injection risk is still structurally hard when agents both read untrusted text and act on it. Useful framing for [[Agentic Harness]] design and for drawing the boundary of “safe enough” autonomy.
+
+*   **[OpenAI Is Slowing Hiring. Anthropic's Engineers Stopped Writing Code. Here's Why You Should Care.](https://www.youtube.com/watch?v=dZxyeYBxPBA)** — The bottleneck shifts from typing to coordination: specify end states, write tests, run agent loops, then do high-leverage review. A practical articulation of “assign tasks, not questions,” plus a warning about capability overhang (workflow adoption lag).
+
+*   **[Context graphs: AI’s trillion-dollar opportunity — Jaya Gupta, Ashu Garg (Foundation Capital)](https://www.youtube.com/watch?v=zP8P7hJXwE0)** — “Context graphs” as enterprise memory: aggregate decision traces (steps, exceptions, human interventions) produced in the orchestration path, not just outcomes captured by systems of record. A useful lens on [[Agent Memory Systems]] and defensible moats for applied AI.
+
+*   **[The Claude Code Skill My Smartest Friends Use](https://www.youtube.com/watch?v=71ES9jzqa0Q)** — A “recent consensus” priming pattern: before generating plans/emails/designs, first synthesize the last 30 days of discourse across X/Reddit/the web, then use that brief as substrate for downstream work. A good reminder that *what you load into context* often matters more than how clever the final prompt is.
+
 ## Related Notes
 
 *   [[Editorial Scoring as Code]]
