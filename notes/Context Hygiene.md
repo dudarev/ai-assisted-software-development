@@ -14,7 +14,7 @@ tags:
 ## Core Principles
 
 ### 1. One Task Per Context Window
-Geoffrey Huntley emphasizes that developers should treat a context window like a small, precious resource (analagous to RAM in early computing). The rule is **"one task per context window."**
+Geoffrey Huntley emphasizes that developers should treat a context window like a small, precious resource (analagous to RAM in early computing). The rule is **"one task per context window"** (also formulated as [[Context is a Per-Feature Budget]]).
 *   **Don't mix concerns:** If you switch from "fixing a backend bug" to "rebranding the frontend", you are polluting the context.
 *   **Start fresh:** Hit "New Chat" frequently. If a tool isn't performing well, it's often due to context pollution.
 
