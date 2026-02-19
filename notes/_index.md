@@ -33,7 +33,7 @@ Clarity and usefulness matter more than completeness.
 - [[Three Developer Loops of Vibe Coding]]
 - [[Agentic Coding]]
 - [[agent-skills|Agent Skills]]
-- [[agentic-harness|Agentic Harness]]
+- [[Agentic Harness|Agentic Harness]]
 - [[four-modes-of-ai-assistance|Four Modes of AI Assistance]]
 - [[Interview-Driven Specification]]
 - [[Measuring AI Assistant's Impact on Software Development Life Cycle]]
