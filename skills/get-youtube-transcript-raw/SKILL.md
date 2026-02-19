@@ -30,8 +30,10 @@ This skill produces:
    - `capture_type: youtube_transcript`
    - `capture_tool: ytt`
    - `raw_format: markdown`
-   - `status: captured` (or `capture_failed` on failure)
+   - `status: captured`
 3. Body content: the raw transcript text emitted by `ytt` (no summarization).
+
+On failure in “fetch” mode, the script exits non-zero and does **not** write a placeholder raw note.
 
 ## Prerequisites
 
