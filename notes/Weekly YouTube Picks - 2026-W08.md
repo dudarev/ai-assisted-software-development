@@ -6,7 +6,7 @@ tags:
   - agentic-workflows
   - reliability
   - publish
-note: This week's picks converge on a single constraint: code is cheap, but variance isn't—so the work shifts to specs, feedback loops, and grounded evidence.
+note: "This week's picks converge on a single constraint: code is cheap, but variance isn't—so the work shifts to specs, feedback loops, and grounded evidence."
 ---
 # Weekly YouTube Picks (2026-W08)
 
