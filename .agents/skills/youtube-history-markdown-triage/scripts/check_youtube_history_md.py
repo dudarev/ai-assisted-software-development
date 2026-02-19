@@ -81,6 +81,25 @@ MD_LINK_RE = re.compile(r"\[([^\]]+)\]\((https?://[^)\s]+)\)")
 URL_RE = re.compile(r"https?://[^\s<>()]+")
 
 
+_DURATION_TITLE_RE = re.compile(r"^\\d{1,2}:\\d{2}(?::\\d{2})?$")
+
+
+def _title_quality(title: str) -> tuple[int, int, int]:
+    """
+    Higher is better.
+
+    Heuristic: prefer non-duration titles and titles containing letters, then longer.
+    This helps when history exports include both a duration link (e.g. "58:00")
+    and a proper title link for the same video.
+    """
+    t = (title or "").strip()
+    if not t:
+        return (0, 0, 0)
+    is_duration = bool(_DURATION_TITLE_RE.match(t))
+    has_alpha = any(ch.isalpha() for ch in t)
+    return (0 if is_duration else 1, 1 if has_alpha else 0, len(t))
+
+
 def parse_history_markdown(md: str, include_shorts: bool) -> list[HistoryItem]:
     by_id: dict[str, HistoryItem] = {}
 
@@ -110,7 +129,7 @@ def parse_history_markdown(md: str, include_shorts: bool) -> list[HistoryItem]:
                     hard_skip_category="",
                     hard_skip_reason="",
                 )
-            elif (not existing.title) and title:
+            elif title and _title_quality(title) > _title_quality(existing.title):
                 existing.title = title
 
         # Also accept plain URLs (with no titles).
