@@ -15,7 +15,7 @@ Required:
 - `history_markdown`: user-pasted Markdown containing YouTube URLs (optionally as `[Title](URL)` links)
 
 Optional:
-- `priority_count`: how many top picks to recommend (default: 5)
+- `priority_count`: how many top picks to recommend (default: 10)
 - `include_shorts`: `true|false` (default: `false`)
 - `focus`: 1-sentence focus (default: “AI-assisted software development”)
 
@@ -61,9 +61,9 @@ Heuristics for `suggest`:
 
 Avoid over-weighting hypey titles; prefer topics that plausibly add durable, reusable ideas to the vault.
 
-### 3) Propose top priorities (default 5)
+### 3) Propose top priorities
 
-Present a ranked top list (default 5) with:
+Present a ranked top list with:
 - title (as given)
 - URL
 - why it’s high leverage for this vault (1–2 sentences)
