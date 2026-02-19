@@ -48,7 +48,7 @@ The Maker-Checker pattern enables the emergence of the **Solution Consultant**â€
 ## Trade-offs and Risks
 
 - **Intellectual Laziness:** There is a constant risk that the Checker becomes fatigued or over-confident in the Maker's output, leading to a breakdown in critical thinking.
-- **The Review Bottleneck:** If the Maker generates code ~10x faster than before, the human Checker must adopt "Parallel Review" patterns or rely more heavily on [[agentic-harness|Agentic Harnesses]] to assist in checking.
+- **The Review Bottleneck:** If the Maker generates code ~10x faster than before, the human Checker must adopt "Parallel Review" patterns or rely more heavily on [[Agentic Harness|Agentic Harnesses]] to assist in checking.
 - **Verification vs. Implementation:** As tools improve, the effort required to *verify* a solution can sometimes exceed the effort it would have taken to *implement* it manually, specifically in complex or subtle logic.
 
 ## The Confidence Gap
