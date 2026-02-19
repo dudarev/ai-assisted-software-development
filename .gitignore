@@ -11,3 +11,5 @@ raw/*
 
 tmp/
 .python-version
+
+.agents/skills/youtube-history-markdown-triage/filters.json
