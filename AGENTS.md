@@ -55,8 +55,10 @@ When adding new material:
 
 When working with notes (in `notes/` directory):
 - Keep notes self-contained and publishable
-- Do not reference or link to `distilled/` or `raw/` content from the **body** of the notes. 
-- However, linking to `distilled/` notes from the **front matter** (using a property like `distilled_refs`) is encouraged to maintain the link to the original derivation.
+- Do not reference or link to `distilled/` or `raw/` content from the **body** of the notes.
+- Use the original sources (articles, threads, etc.) if referencing external work, adding your own synthesis and comments.
+- **Direction:** Distilled notes (`distilled/`) CAN reference domain notes (`notes/`), but domain notes (`notes/`) SHOULD NOT depend on distilled content. They should stand alone as domain knowledge.
+- However, linking to `distilled/` notes from the **front matter** (using a property like `distilled_refs` or `source` if applicable) is encouraged to maintain the lineage, but keep the prose clean.
 - Nodes must be publishable to the web without the internal `distilled/` folder, which is why the body remains clean of internal links.
 - Use the original sources (articles, threads, etc.) if referencing external work, adding your own synthesis and comments.
 - Link only to public external resources (articles, papers, podcasts) in the References section
