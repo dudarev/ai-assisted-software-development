@@ -19,7 +19,7 @@ This ritual is the engine behind the [[Tooling Chaos Monkey]]—it provides the 
 
 To do effective discovery, you must distinguish between the **Model** (the brain) and the **Harness** (the body/agent/IDE).
 
-*   **[[agentic-harness|Harness]]**: Tools like Claud Code, Cline, Roo Code, OpenHands, or Droid. 
+*   **[[Agentic Harness|Harness]]**: Tools like Claud Code, Cline, Roo Code, OpenHands, or Droid. 
     They provide the tool-use logic, environment access, and UI.
 *   **Models**: The underlying LLMs (Claude 3.5, GPT-4o, Gemini 1.5).
 
