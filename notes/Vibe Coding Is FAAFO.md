@@ -12,7 +12,7 @@ distilled:
 ---
 # Vibe Coding Is FAAFO
 
-Gene Kim and Steve Yegge coined the term **FAAFO** to describe the five dimensions of value that vibe coding (AI-assisted programming) creates:
+Gene Kim and [[Steve Yegge]] coined the term **FAAFO** to describe the five dimensions of value that vibe coding (AI-assisted programming) creates:
 
 - **Fast**: Rapid code generation and iteration
 - **Ambitious**: Projects once too difficult become feasible

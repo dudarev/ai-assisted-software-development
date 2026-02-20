@@ -12,7 +12,7 @@ tags:
 ---
 # Three Developer Loops of Vibe Coding
 
-This note summarizes the “Three Developer Loops” framework from the book [*Vibe Coding*](https://itrevolution.com/product/vibe-coding-book/) by Gene Kim and Steve Yegge.
+This note summarizes the “Three Developer Loops” framework from the book [*Vibe Coding*](https://itrevolution.com/product/vibe-coding-book/) by Gene Kim and [[Steve Yegge]].
 
 The core idea: AI-assisted development happens across three different feedback-loop timescales. Practices (and patterns) must match the loop you’re currently in to maintain speed without sacrificing quality.
 

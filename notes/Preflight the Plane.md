@@ -104,5 +104,5 @@ then stop and wait for approval.”
 - “AI Techniques Distilled From Thousands of Hours of Real Work” (silent requirement dropping; clear context as fix): https://www.youtube.com/watch?v=kf6h6DOPjpI
 - Aleksander Stensby, “10 tips to level up your ai-assisted coding” (plan first; manage context; recap + reset): https://www.youtube.com/watch?v=z8XWvBpL_EA
 - Geoffrey Huntley, “Ralph Wiggum as a ‘software engineer’” (loop framing; objective checks): https://ghuntley.com/ralph/
-- Steve Yegge, “Beyond Instructions: How Beads Lets AI Agents Build Like Engineers” (landing-the-plane idea; continuity discipline): https://www.youtube.com/watch?v=s96O9oWI_tI
+- [[Steve Yegge]], “Beyond Instructions: How Beads Lets AI Agents Build Like Engineers” (landing-the-plane idea; continuity discipline): https://www.youtube.com/watch?v=s96O9oWI_tI
 - pi (minimal agent stance; context/tooling as a budget): https://www.youtube.com/watch?v=4p2uQ4FQtis

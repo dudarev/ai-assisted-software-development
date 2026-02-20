@@ -29,7 +29,7 @@ Every registered tool (function/MCP) consumes tokens and "attention" even when n
 Instead of relying on the chat history (which gets compacted or truncated), push state to the file system.
 *   **"Repo as Memory":** Use files like `progress.md`, `checklists.md`, or architecture decision records (ADRs) to store state.
 *   **Durability:** Files persist across sessions; chat history does not.
-*   **[[Landing the Plane]]:** Steve Yegge (creator of **Beads**) formalized this protocol. Before a session ends (due to fatigue or token limits), the agent runs a cleanup script to update state and generate a **"next session prompt"**.
+*   **[[Landing the Plane]]:** [[Steve Yegge]] (creator of **Beads**) formalized this protocol. Before a session ends (due to fatigue or token limits), the agent runs a cleanup script to update state and generate a **"next session prompt"**.
 
 ## "Context Pollution" & Compaction
 *   **Pollution:** When the context contains irrelevant information (old errors, previous tasks), the model's ability to find the "needle in the haystack" decreases. It may hallucinate or get confused by previous instructions that are no longer valid.
@@ -40,4 +40,4 @@ Instead of relying on the chat history (which gets compacted or truncated), push
 *   **Related Note:** [[Ralph Wiggum Loop – January 2026 Snapshot]] - Discusses context hygiene in the context of autonomous loops.
 *   **Related Note:** [[Compounding Engineering Loop]] - References the importance of resetting context.
 *   **Video:** [pi - a radically minimal, opinionated multi-model coding agent](https://www.youtube.com/watch?v=4p2uQ4FQtis) (Creator of Pi agent).
-*   **Video:** [Beyond Instructions: How Beads Lets AI Agents Build Like Engineers](https://www.youtube.com/watch?v=s96O9oWI_tI) (Steve Yegge on Beads).
+*   **Video:** [Beyond Instructions: How Beads Lets AI Agents Build Like Engineers](https://www.youtube.com/watch?v=s96O9oWI_tI) ([[Steve Yegge]] on Beads).
