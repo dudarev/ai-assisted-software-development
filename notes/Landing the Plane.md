@@ -9,7 +9,7 @@ tags:
 ---
 # Landing the Plane
 
-**Landing the Plane** is a session termination protocol for AI agents, formalized by Steve Yegge (creator of the **Beads** framework). It addresses the "amnesia" problem where agents lose context between sessions and leave "crap" (temporary artifacts) behind.
+**Landing the Plane** is a session termination protocol for AI agents, formalized by [[Steve Yegge]] (creator of the **Beads** framework). It addresses the "amnesia" problem where agents lose context between sessions and leave "crap" (temporary artifacts) behind.
 
 ## The Problem
 Without a disciplined shutdown process:
@@ -34,6 +34,8 @@ This prompt effectively "bridges" the context gap, allowing the next session to 
 
 ## Application
 This pattern is critical for [[Context Hygiene]], allowing developers to run shorter, focused sessions ("one task per context window") without losing momentum.
+
+Counterpart: [[Preflight the Plane]] (session initiation checklist).
 
 ## References
 *   **Related Note:** [[Context Hygiene]]
