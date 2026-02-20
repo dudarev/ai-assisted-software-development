@@ -2,39 +2,49 @@
 tags:
   - person
   - agentic-coding
+  - workflow
   - engineering-philosophy
   - publish
 active: true
 created: 2026-02-04
+summary: Australian software engineer and writer; known for the “Ralph” loop framing and for public arguments about agentic coding, context hygiene, and identity in software engineering.
 ---
 
 # Geoffrey Huntley
 
-**Role:** Software Engineer, Researcher, Journalist
-**Focus:** High-performance agentic workflows, "Ralphing", Identity Erasure
-**Links:** [Website](https://ghuntley.com/) | [Twitter](https://x.com/GeoffreyHuntley) | [GitHub](https://github.com/ghuntley)
+Geoffrey Huntley is an Australian software engineer who writes and speaks about software engineering practice and developer tooling. He is known online for a mix of advocacy, demos, and memorable framings that translate messy day-to-day engineering work into simple operator loops and constraints.
 
-## Bio
+More recently, his public work has focused on **agentic coding**: how to structure AI-assisted development as a set of repeatable loops with explicit verification, and how to adapt team and personal practices to the reality that an engineer can “reach” across stacks via agents.
 
-Geoffrey Huntley is an Australian software engineer and researcher known for challenging the status quo in software development and technology policy. Formerly known for **The NFT Bay** (a project demonstrating the fragility of NFT ownership), he has shifted his focus in 2025-2026 to the forefront of **Agentic Coding**.
+## Ideas and Work on AI-Assisted Development
 
-He is a vocal advocate for "high-performance" engineering using AI, arguing that the traditional identity of a software developer (e.g., "I am a .NET developer") is becoming obsolete. Instead, he promotes the idea of **"Identity Erasure"**—shedding specific tech stack allegiances to become a generalized engineer who orchestrates AI agents.
+### “Ralph” / the Ralph Wiggum loop (verification-first iteration)
+Huntley coined “**Ralph**” (often “Ralphing”) as a way to describe an iterative loop where an agent attempts a change, then a **verification step** decides whether the loop continues. The point is to move from “chatty progress” to **testable progress** by making the exit condition explicit (tests pass, build succeeds, a checker script returns 0, etc.).
 
-## Key Concepts & Contributions
+Related: [[Ralph Wiggum Loop – January 2026 Snapshot]].
 
-### The Ralph Wiggum Loop ("Ralphing")
-Huntley coined the term "Ralph" (or **Ralphing**) to describe a deterministic, iterative loop where an AI agent attempts to solve a problem until a verification step passes.
-*   **Philosophy:** "Deterministic badness in an undeterministic world."
-*   **Technique:** A simple bash loop (`while :; do ... done`) that runs an agent until it outputs a specific completion promise.
-*   **Evolution:** This concept was formalized into the official **Ralph Loop** plugin for Claude Code.
+### “One task per context window” (context hygiene)
+He has emphasized **context hygiene** as an operator skill: treat a context window like a scarce resource, keep it focused, and reset frequently rather than letting long, drifting sessions degrade quality.
 
-### Identity Erasure
-The concept that AI lowers the barrier to entry for any language or framework so significantly that "specializing" is no longer a competitive advantage.
-*   "If you are still using Claude Code in y/n mode, your employment is at risk."
-*   He argues that junior engineers may have an advantage as they have less "identity" to unlearn.
+Related: [[Context Hygiene]], [[Context is a Per-Feature Budget]].
 
-### The "300 Lines of Code" Agent
-A workshop and educational initiative where he demonstrates that a powerful, autonomous coding agent isn't magic, but can be built in ~300 lines of code using basic primitives (file I/O, shell execution, LLM loop).
+### Identity erasure (stack identity becomes less durable)
+Huntley uses “**identity erasure**” to describe a shift where language/framework identity (e.g., “I’m a .NET developer”) becomes less central, because agents make it cheaper to traverse unfamiliar stacks. In this view, advantage comes less from allegiance to a toolchain and more from general engineering judgment: decomposing work, defining checks, and orchestrating loops.
+
+Related: [[Orchestrator vs. Executor]].
+
+### “A ~300-line agent” (demystifying autonomy)
+He has argued (often by demonstration) that an effective coding agent can be relatively small: a loop around an LLM plus a handful of primitives (read files, write files, run commands) and a discipline of verification and reset.
 
 ## Related Notes
-- [[notes/Ralph Wiggum Loop – January 2026 Snapshot]]
+- [[Ralph Wiggum Loop – January 2026 Snapshot]]
+- [[Context Hygiene]]
+- [[Context is a Per-Feature Budget]]
+- [[Orchestrator vs. Executor]]
+
+## References
+- [Website: ghuntley.com](https://ghuntley.com/)
+- [X: @GeoffreyHuntley](https://x.com/GeoffreyHuntley)
+- [GitHub: ghuntley](https://github.com/ghuntley)
+- [Article: “Ralph Wiggum as a ‘software engineer’”](https://ghuntley.com/ralph/)
+- [YouTube: “Fundamental Knowledge SWE's in 2026 Must Have (Hiring Bar)”](https://www.youtube.com/watch?v=F5wxBoGSWtk)
