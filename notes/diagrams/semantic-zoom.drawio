@@ -1,0 +1,64 @@
+<mxfile host="65bd71144e">
+    <diagram id="semantic-zoom" name="Semantic Zoom">
+        <mxGraphModel dx="2333" dy="826" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="3" value="" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="-10" y="60" width="1120" height="615" as="geometry"/>
+                </mxCell>
+                <mxCell id="density-label" value="More detail / more tokens" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#333333;" parent="1" vertex="1">
+                    <mxGeometry x="360" y="110" width="380" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="z3" value="Z3 — Full" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1f4e79;strokeColor=#16365c;fontStyle=1;align=center;verticalAlign=middle;fontSize=14;fontColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="380" y="150" width="340" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="z2" value="Z2 — Details" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#2e75b6;strokeColor=#1f4e79;fontStyle=1;align=center;verticalAlign=middle;fontSize=14;fontColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="380" y="260" width="340" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="z1" value="Z1 — Outline" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#9dc3e6;strokeColor=#2e75b6;fontStyle=1;align=center;verticalAlign=middle;fontSize=14;fontColor=#1d1d1d;" parent="1" vertex="1">
+                    <mxGeometry x="380" y="370" width="340" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="z0" value="Z0 — Gist" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d9eaf7;strokeColor=#9dc3e6;fontStyle=1;align=center;verticalAlign=middle;fontSize=14;fontColor=#1d1d1d;" parent="1" vertex="1">
+                    <mxGeometry x="380" y="480" width="340" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="less-density-label" value="Less detail / fewer tokens" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#333333;" parent="1" vertex="1">
+                    <mxGeometry x="360" y="600" width="380" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="zoom-out" value="" style="endArrow=block;endFill=1;strokeWidth=3;strokeColor=#b85450;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="310" y="170" as="sourcePoint"/>
+                        <mxPoint x="310" y="580" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="zoom-in" value="" style="endArrow=block;endFill=1;strokeWidth=3;strokeColor=#548235;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="790" y="580" as="sourcePoint"/>
+                        <mxPoint x="790" y="170" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="zoom-out-label" value="Zoom out&#xa;(noise cancellation)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=15;fontStyle=1;fontColor=#7f2f2a;" parent="1" vertex="1">
+                    <mxGeometry x="30" y="230" width="300" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="zoom-in-label" value="Zoom in&#xa;(deepening understanding)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=15;fontStyle=1;fontColor=#2f5d1e;" parent="1" vertex="1">
+                    <mxGeometry x="780" y="230" width="300" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="out-p1" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;&quot;TL;DR&quot;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;align=center;verticalAlign=middle;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="90" y="330" width="180" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="out-p2" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;&quot;High level only&quot;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;align=center;verticalAlign=middle;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="90" y="440" width="180" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="in-p1" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;&quot;Tell me more about X&quot;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=center;verticalAlign=middle;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="830" y="330" width="210" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="in-p2" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;&quot;Show implementation details&lt;br&gt;of this specific function&quot;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=center;verticalAlign=middle;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="830" y="450" width="210" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="default-note" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Default to Z0/Z1&lt;br&gt;Then zoom in only&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;where you’re actively working&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=center;verticalAlign=middle;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="415" y="450" width="270" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
