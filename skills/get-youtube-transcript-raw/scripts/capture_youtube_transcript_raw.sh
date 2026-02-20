@@ -7,6 +7,7 @@ Usage:
   capture_youtube_transcript_raw.sh <youtube_url> [title_hint]
   capture_youtube_transcript_raw.sh --from-file <ytt_output_file> [title_hint]
   capture_youtube_transcript_raw.sh --from-stdin [title_hint]
+  capture_youtube_transcript_raw.sh --write-failure-note <youtube_url> [title_hint]
 
 Writes:
   raw/YYYYMMDD-HHMMSSZ--<slug>.md
@@ -18,6 +19,8 @@ Notes:
   - Default mode runs: ytt fetch --no-copy "<youtube_url>"
   - If the runtime can’t access the network, use:
       ytt fetch --no-copy "<youtube_url>" | capture_youtube_transcript_raw.sh --from-stdin
+  - On fetch failure, this script exits non-zero and does not write a raw note.
+    For debugging, you can opt-in to a capture_failed note with --write-failure-note.
 EOF
 }
 
@@ -35,6 +38,12 @@ mode="fetch"
 youtube_url=""
 input_path=""
 title_hint=""
+write_failure_note="false"
+
+if [[ "${1:-}" == "--write-failure-note" ]]; then
+  write_failure_note="true"
+  shift
+fi
 
 if [[ "${1:-}" == "--from-file" ]]; then
   mode="from-file"
@@ -61,6 +70,21 @@ timestamp_slug="$(date -u +"%Y%m%d-%H%M%SZ")"
 
 mkdir -p raw
 
+ensure_unique_out_path() {
+  local out_path="$1"
+  if [[ ! -e "$out_path" ]]; then
+    printf '%s' "$out_path"
+    return 0
+  fi
+
+  local base="${out_path%.md}"
+  local i=2
+  while [[ -e "${base}--${i}.md" ]]; do
+    i=$((i + 1))
+  done
+  printf '%s' "${base}--${i}.md"
+}
+
 tmp_meta="$(mktemp -t ytt-meta.XXXXXX.txt)"
 tmp_err="$(mktemp -t ytt-err.XXXXXX.txt)"
 trap 'rm -f "$tmp_meta" "$tmp_err"' EXIT
@@ -76,6 +100,19 @@ else
   fi
 
   if ! ytt fetch --no-copy "$youtube_url" >"$tmp_meta" 2>"$tmp_err"; then
+    if [[ "$write_failure_note" != "true" ]]; then
+      echo "error: failed to fetch YouTube transcript via ytt" >&2
+      echo "url: $youtube_url" >&2
+      if [[ -s "$tmp_err" ]]; then
+        echo >&2
+        cat "$tmp_err" >&2
+      fi
+      echo >&2
+      echo "hint: if this environment can’t reach YouTube, run locally and pipe the output:" >&2
+      echo "  ytt fetch --no-copy \"$youtube_url\" | ./scripts/ytraw" >&2
+      exit 1
+    fi
+
     title="${title_hint:-YouTube video}"
     slug="$(python3 - "$title" "$youtube_url" <<'PY'
 import re, sys
@@ -102,6 +139,7 @@ print(base + "--capture-failed")
 PY
 )"
     out_path="raw/${timestamp_slug}--${slug}.md"
+    out_path="$(ensure_unique_out_path "$out_path")"
     cat >"$out_path" <<EOF
 ---
 title: "$(printf '%s' "$title" | python3 -c 'import sys, json; print(json.dumps(sys.stdin.read().strip())[1:-1])')"
@@ -119,7 +157,7 @@ ytt fetch --no-copy "<youtube_url>"
 
 Error output:
 
-	EOF
+EOF
 	    cat "$tmp_err" >>"$out_path" || true
 	    cat >>"$out_path" <<EOF
 
@@ -135,7 +173,7 @@ EOF
 	    echo >&2
 	    echo "hint: if this environment can’t reach YouTube, run locally and pipe the output:" >&2
 	    echo "  ytt fetch --no-copy \"$youtube_url\" | ./scripts/ytraw" >&2
-	    exit 0
+	    exit 1
   fi
 fi
 
@@ -199,6 +237,7 @@ PY
 )"
 
 out_path="raw/${timestamp_slug}--${slug}.md"
+out_path="$(ensure_unique_out_path "$out_path")"
 
 cat >"$out_path" <<EOF
 ---
