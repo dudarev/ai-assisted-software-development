@@ -72,6 +72,15 @@ Good slices are often **vertical** (user-visible capability end-to-end), but sli
 
 ---
 
+## Related Notes
+
+- [[Compounding Engineering Loop]]
+- [[Three Developer Loops of Vibe Coding]]
+- [[Loop-aware patterns and principles for AI-assisted software development]]
+- [[Maker-Checker Pattern]]
+- [[Executable Specs]]
+- [[Measuring AI Assistant's Impact on Software Development Life Cycle]]
+
 ## References
 
 - “How AI will change software engineering – with Martin Fowler” (interview). YouTube: https://www.youtube.com/watch?v=CQmI4XKTa0U
