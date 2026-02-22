@@ -6,11 +6,14 @@ This note is based on the ideas described in [The append-and-review note | karpa
 
 Think about unified style for the references.
 
+Natural intelligence and interaction between natural and artificial intelligence is becoming extremely important when considering different patterns how to use artificial intelligence in the software development life cycle. 
+
 An idea about creating images with Open Graph Standard that capture summary of the text that's described in the node and doing it automatically It can be part of the front matter and the front matter also can be used to update the description HTML tag or whatever tag is missing.
 
 [Coding with AI // Chip Huyen - YouTube](https://www.youtube.com/watch?v=xY1FcjIbErQ) - Mentioned as the best keynote in MLOps community. 
 
 “coding genie” analogy (Ken Beck) – powerful but mischievous: often “mostly works,” so you must tame it. As mentioned by Lada Kesseler https://www.youtube.com/watch?v=_LSK2bVf0Lc 
+This can be thought of as a mental model, a way to think about AI coding assistance. There are multiple ways to do it and multiple people suggest them. 
 
 In general, think about collecting different analogies and metaphors appropriate for working with AI in the context of AI-assisted software development. https://chatgpt.com/c/69596ec5-db3c-8325-a8ab-c3e075dc77ad
 
