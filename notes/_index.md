@@ -4,6 +4,8 @@ tags:
   - publish
 status: to-duplicate
 ---
+<!-- TODO: I would like to rewrite this note based on my experience so far. Probably I should mention my real name somewhere here. -->
+
 This knowledge base is a public working notebook for AI-assisted software development.
 
 It focuses on practices that stay useful even as tools change: how to think, decide, and iterate when AI is part of the workflow.
