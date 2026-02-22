@@ -1,0 +1,13 @@
+{
+	"nodes":[
+		{"id":"9864604ceffa6ed0","x":-655,"y":40,"width":250,"height":60,"type":"text","text":""},
+		{"id":"b2de92ce436c7dda","type":"text","text":"**[[Spec-Driven Development|SDD]]**","x":-280,"y":-220,"width":80,"height":60},
+		{"id":"d1a8da30e2eb4ed1","type":"text","text":"[[Spec Branch Flow]]","x":-60,"y":40,"width":250,"height":60},
+		{"id":"63ed2dc6351ed79a","type":"text","text":"Which part of the life cycle we are in?","x":-530,"y":-400,"width":330,"height":60},
+		{"id":"58857798657bffb6","x":-940,"y":-220,"width":250,"height":60,"type":"text","text":"Disposable Software"},
+		{"id":"be5ab6aacf49fc65","x":-655,"y":-60,"width":250,"height":60,"type":"text","text":"Ask AI to generate v0.1"}
+	],
+	"edges":[
+		{"id":"75ac890f61c9480e","fromNode":"b2de92ce436c7dda","fromSide":"bottom","toNode":"d1a8da30e2eb4ed1","toSide":"top","label":"Can be used with"}
+	]
+}
