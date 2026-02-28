@@ -73,4 +73,4 @@ Avoid forking for:
 
 ## Related Concepts
 
-- [Agentic Harness](<Agentic Harness.md>) 
+- [[Agentic Harness]]
