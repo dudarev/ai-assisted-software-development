@@ -12,6 +12,12 @@ distilled_refs:
 ---
 # Context is a Per-Feature Budget
 
+<!-- 
+I like how it's stated in another place more:
+
+One task per context window
+ -->
+
 **Context is a Per-Feature Budget** is the operational principle that treats an LLM's context window not as a persistent workspace, but as a finite, depleting resource allocated to a single unit of work (e.g., a feature, a bug fix, or a distinct task).
 
 ## The Core Concept
@@ -27,7 +33,7 @@ To combat this, you must **reset the context** (start a new chat) for every new 
 3.  **Reset:** Once the task is complete (or if the context heavily degrades), end the session.
 4.  **Repeat:** Start a fresh context for the next unit of work.
 
-> "A new unit of work gets a fresh context." — *AI Techniques Distilled*
+> "A new unit of work gets a fresh context." — *[AI Techniques Distilled](https://www.youtube.com/watch?v=kf6h6DOPjpI)*
 
 ## The Prerequisite: External Memory
 
