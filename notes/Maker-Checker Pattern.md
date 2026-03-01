@@ -12,6 +12,10 @@ summary: A workflow where an AI “maker” proposes changes and a human “chec
 ---
 # Maker-Checker Pattern
 
+<!-- 
+This is really resonates with the idea of generalist and specialist from Lada Kessler. She mentions that when she gives rather a generic prompt to an agent he may find something or it may not find anything most frequently. but if the task is very specific for an agent, it has high chance of delivering on it. Here it's also relevant, one entity makes another checks It's similar to dichotomy of a developer and a QA engineer. I need to think more about it.
+-->
+
 The **Maker-Checker pattern** (derived from the financial "Four Eyes" principle) is a primary operational model for reliable AI-assisted software development.
 
 > **Definition:** Maker–checker (or Maker and Checker or 4-Eyes) is one of the central principles of authorization in the information systems of financial organizations. The principle of maker and checker means that, for each transaction, there must be at least two individuals necessary for its completion. While one individual may create a transaction, the other individual should be involved in confirmation/authorization of the same. ([Wikipedia](https://en.wikipedia.org/wiki/Maker-checker))
@@ -65,6 +69,7 @@ As implementation gets delegated, confidence shifts from authorship (“I wrote 
 - [[Executable Specs]] – Turning requirements into runnable tests.
 - [[Three Developer Loops of Vibe Coding]] – Selecting practices based on the feedback-loop timescale.
 - [[Orchestrator vs. Executor]] – A framing for how the human role shifts as implementation becomes cheaper.
+- [[Role Separation Pattern]] - General pattern of separating the roles.
 
 ## Sources and Observations
 

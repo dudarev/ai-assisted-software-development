@@ -48,3 +48,4 @@ Discovery is for exploring options and clarifying what to build. Delivery is for
 - [[Interview-Driven Specification]]
 - [[Spec-Driven Development]]
 - [[ten-principles-for-coding-with-ai]]
+- [[Role Separation Pattern]]
