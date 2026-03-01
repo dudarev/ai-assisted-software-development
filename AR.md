@@ -4,6 +4,12 @@ This note is based on the ideas described in [The append-and-review note | karpa
 
 ---
 
+Self-coding, pi as an example
+
+Example of the sandbox for OpenClaw: https://github.com/cloudflare/moltworker [[Sandboxing AI Agents]]
+
+Manifestos similar to Agile Manifesto.
+
 Think about unified style for the references.
 
 Natural intelligence and interaction between natural and artificial intelligence is becoming extremely important when considering different patterns how to use artificial intelligence in the software development life cycle. 
