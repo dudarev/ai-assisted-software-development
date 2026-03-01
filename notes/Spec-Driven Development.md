@@ -8,6 +8,8 @@ tags:
   - publish
 summary: A development methodology where high-level technical specifications, rather than manual code entry, serve as the primary driver for implementation by AI agents.
 status: published
+aliases:
+  - SDD
 ---
 # Spec-Driven Development
 
