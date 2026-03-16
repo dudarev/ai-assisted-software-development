@@ -8,7 +8,7 @@ import re
 import sys
 from dataclasses import asdict, dataclass
 from pathlib import Path
-from typing import Iterable
+from typing import Iterable, TextIO
 from urllib.parse import parse_qs, urlparse
 
 
@@ -248,27 +248,48 @@ def apply_hard_skip_filters(items: list[HistoryItem], filters: dict) -> None:
                 break
 
 
-def to_markdown(items: list[HistoryItem]) -> str:
+def _summary_counts(items: list[HistoryItem]) -> dict[str, int]:
     total = len(items)
     hard_skipped = sum(1 for it in items if it.hard_skip)
     kept = [it for it in items if not it.hard_skip]
 
     captured = sum(1 for it in kept if it.raw_files)
     uncaptured = len(kept) - captured
+    return {
+        "unique_videos": total,
+        "hard_skipped": hard_skipped,
+        "considered_after_skip": len(kept),
+        "already_captured_in_raw": captured,
+        "not_captured": uncaptured,
+    }
+
+
+def to_markdown(
+    items: list[HistoryItem],
+    *,
+    max_table_rows: int | None,
+    max_not_captured: int | None,
+) -> str:
+    counts = _summary_counts(items)
+    kept = [it for it in items if not it.hard_skip]
+    hard_skipped_items = [it for it in items if it.hard_skip]
 
     lines: list[str] = []
     lines.append("## Parsed YouTube history")
-    lines.append(f"- Unique videos: {total}")
-    lines.append(f"- Hard-skipped (excluded): {hard_skipped}")
-    lines.append(f"- Considered after skip: {len(kept)}")
-    lines.append(f"- Already captured in raw/: {captured}")
-    lines.append(f"- Not captured: {uncaptured}")
+    lines.append(f"- Unique videos: {counts['unique_videos']}")
+    lines.append(f"- Hard-skipped (excluded): {counts['hard_skipped']}")
+    lines.append(f"- Considered after skip: {counts['considered_after_skip']}")
+    lines.append(f"- Already captured in raw/: {counts['already_captured_in_raw']}")
+    lines.append(f"- Not captured: {counts['not_captured']}")
     lines.append("")
     lines.append("## Videos (considered)")
     lines.append("| # | Captured | Title | URL | Raw files |")
     lines.append("|---:|:--:|---|---|---|")
 
+    shown_rows = 0
     for idx, it in enumerate(kept, start=1):
+        if max_table_rows is not None and shown_rows >= max_table_rows:
+            break
         captured_mark = "✅" if it.raw_files else "—"
         title = (it.title or "").replace("|", "\\|").strip()
         if not title:
@@ -278,29 +299,49 @@ def to_markdown(items: list[HistoryItem]) -> str:
         if len(it.raw_files) > 2:
             raw_files = f"{raw_files} (+{len(it.raw_files) - 2} more)"
         lines.append(f"| {idx} | {captured_mark} | {title} | {url} | {raw_files} |")
+        shown_rows += 1
+
+    if max_table_rows is not None and len(kept) > shown_rows:
+        lines.append("")
+        lines.append(f"_Table truncated: showing {shown_rows} of {len(kept)} considered items._")
 
     lines.append("")
     lines.append("## Not yet captured (copy/paste)")
+    shown_uncaptured = 0
     for it in kept:
         if it.raw_files:
             continue
+        if max_not_captured is not None and shown_uncaptured >= max_not_captured:
+            break
         if it.title:
             lines.append(f"- [{it.title}]({it.url})")
         else:
             lines.append(f"- {it.url}")
+        shown_uncaptured += 1
 
-    if hard_skipped:
+    if max_not_captured is not None and counts["not_captured"] > shown_uncaptured:
+        lines.append("")
+        lines.append(f"_List truncated: showing {shown_uncaptured} of {counts['not_captured']} not-yet-captured items._")
+
+    if hard_skipped_items:
         lines.append("")
         lines.append("## Hard-skipped (excluded)")
         lines.append("| Title | URL | Category |")
         lines.append("|---|---|---|")
-        for it in items:
-            if not it.hard_skip:
-                continue
+        for it in hard_skipped_items:
             title = (it.title or "").replace("|", "\\|").strip() or "(no title provided)"
             lines.append(f"| {title} | {it.url} | {it.hard_skip_category or 'unknown'} |")
 
     return "\n".join(lines).rstrip() + "\n"
+
+
+def _write_output(out_path: str, content: str) -> None:
+    if not out_path.strip() or out_path.strip() == "-":
+        sys.stdout.write(content)
+        return
+    path = Path(os.path.expanduser(out_path.strip()))
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(content, encoding="utf-8")
 
 
 def main() -> int:
@@ -326,7 +367,7 @@ def main() -> int:
     parser.add_argument(
         "--hard-skip-config",
         default="",
-        help="Path to JSON hard-skip config. Default: skills/youtube-history-markdown-triage/filters.json.",
+        help="Path to JSON hard-skip config. Default: <skill_dir>/filters.json (auto-detected).",
     )
     parser.add_argument(
         "--no-hard-skip",
@@ -339,6 +380,29 @@ def main() -> int:
         default="md",
         help="Output format (default: md).",
     )
+    parser.add_argument(
+        "--sort",
+        choices=["input", "title"],
+        default="input",
+        help="Sorting mode for output (default: input).",
+    )
+    parser.add_argument(
+        "--out",
+        default="-",
+        help="Write output to a file instead of stdout. Use '-' for stdout (default: -).",
+    )
+    parser.add_argument(
+        "--md-max-table-rows",
+        type=int,
+        default=200,
+        help="Max rows to print in the Markdown table (default: 200). Use 0 for unlimited.",
+    )
+    parser.add_argument(
+        "--md-max-not-captured",
+        type=int,
+        default=200,
+        help="Max bullets to print under 'Not yet captured' (default: 200). Use 0 for unlimited.",
+    )
 
     args = parser.parse_args()
 
@@ -348,7 +412,8 @@ def main() -> int:
         return 2
 
     items = parse_history_markdown(md, include_shorts=args.include_shorts)
-    items.sort(key=lambda x: (0 if x.title else 1, x.title.lower(), x.video_id))
+    if args.sort == "title":
+        items.sort(key=lambda x: (0 if x.title else 1, x.title.lower(), x.video_id))
 
     raw_dir = Path(os.path.expanduser(args.raw_dir))
     raw_index = index_raw_youtube_ids(raw_dir, max_lines=args.max_raw_head_lines)
@@ -367,12 +432,18 @@ def main() -> int:
         apply_hard_skip_filters(items, filters)
 
     if args.format == "json":
-        payload = [asdict(it) for it in items]
-        json.dump(payload, sys.stdout, ensure_ascii=False, indent=2)
-        sys.stdout.write("\n")
+        payload = {
+            "counts": _summary_counts(items),
+            "items": [asdict(it) for it in items],
+        }
+        content = json.dumps(payload, ensure_ascii=False, indent=2) + "\n"
+        _write_output(args.out, content)
         return 0
 
-    sys.stdout.write(to_markdown(items))
+    max_table_rows = None if int(args.md_max_table_rows) == 0 else int(args.md_max_table_rows)
+    max_not_captured = None if int(args.md_max_not_captured) == 0 else int(args.md_max_not_captured)
+    content = to_markdown(items, max_table_rows=max_table_rows, max_not_captured=max_not_captured)
+    _write_output(args.out, content)
     return 0
 
 

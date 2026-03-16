@@ -33,18 +33,20 @@ Take the user’s pasted Markdown and run the helper script to:
 - extract YouTube video URLs + IDs
 - dedupe by video ID
 - detect whether each ID is already present in `raw/` (best-effort)
-- **hard-skip** obvious off-topic topics (defaults: physics/math, politics, sports/entertainment), configurable via `skills/youtube-history-markdown-triage/filters.json`
+- **hard-skip** obvious off-topic topics (defaults: physics/math, politics/war, sports/fitness, cars, entertainment), configurable via `.agents/skills/youtube-history-markdown-triage/filters.json`
 
 Run (paste the user’s Markdown into the heredoc):
 
 ```bash
-python3 skills/youtube-history-markdown-triage/scripts/check_youtube_history_md.py --raw-dir raw <<'MD'
+python3 .agents/skills/youtube-history-markdown-triage/scripts/check_youtube_history_md.py --raw-dir raw --out /tmp/youtube_history_triage.md <<'MD'
 <PASTE USER MARKDOWN HERE>
 MD
 ```
 
+If the pasted history is large, prefer writing output to a file via `--out ...` to avoid truncation.
 If the user wants to include shorts, add `--include-shorts`. Otherwise default behavior is to ignore shorts.
 If you want to see everything (no filtering), add `--no-hard-skip`.
+If you want machine-readable output, add `--format json` (e.g. `--out /tmp/youtube_history_triage.json`).
 
 ### 2) Triage for relevance (human judgment)
 
@@ -100,4 +102,4 @@ After you show the triage, ask 1–2 quick questions:
 - “Any false hard-skips (something excluded that you’d want to keep)?”
 - “Any new hard-skip categories/keywords you want as defaults?”
 
-If the user gives concrete keywords/categories, update `skills/youtube-history-markdown-triage/filters.json` in a small, reviewable diff.
+If the user gives concrete keywords/categories, update `.agents/skills/youtube-history-markdown-triage/filters.json` in a small, reviewable diff.
