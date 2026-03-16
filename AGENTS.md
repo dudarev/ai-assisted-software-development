@@ -73,6 +73,7 @@ Prompts are frequently voice-dictated. Agents must:
 
 **Common mistranscriptions & terminology:**
 - "node" / "note": These are used interchangeably. When the user says "node", they usually mean a permanent "note" in the `notes/` directory.
+- "PDD" / "BDD": In voice dictation, "PDD" may be a transcription error for "BDD" (Behavior-Driven Development).
 
 ## Authority model
 
