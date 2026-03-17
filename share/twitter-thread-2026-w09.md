@@ -1,5 +1,5 @@
 ---
-status:published
+status: published
 url: https://x.com/dudarev/status/2027850796876857708
 ---
 # Twitter Thread: Weekly YouTube Picks (2026-W09)
