@@ -34,7 +34,7 @@ Clarity and usefulness matter more than completeness.
 - [[Executable Specs]]
 - [[Three Developer Loops of Vibe Coding]]
 - [[Agentic Coding]]
-- [[agent-skills|Agent Skills]]
+- [[Agent Skills|Agent Skills]]
 - [[Agentic Harness|Agentic Harness]]
 - [[four-modes-of-ai-assistance|Four Modes of AI Assistance]]
 - [[Interview-Driven Specification]]
