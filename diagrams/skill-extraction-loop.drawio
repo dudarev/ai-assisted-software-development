@@ -1,0 +1,74 @@
+<mxfile host="65bd71144e">
+    <diagram id="skill-extraction-loop" name="Skill extraction loop">
+        <mxGraphModel dx="1246" dy="826" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1250" pageHeight="850" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title" value="Skill extraction loop" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=26;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="30" width="1170" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="subtitle" value="Turn repeated work into a reusable skill; keep tightening the loop with real examples" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=13;fontColor=#555555;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="70" width="1170" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="s1" value="1. Ad-hoc run&#xa;Help on a real task" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d9eaf7;strokeColor=#2e75b6;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="515" y="130" width="220" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="s2" value="2. Capture a good run&#xa;Inputs, outputs, decisions" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d9eaf7;strokeColor=#2e75b6;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="820" y="250" width="220" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="s3" value="3. Extract invariants&#xa;Steps + heuristics + checks" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d9eaf7;strokeColor=#2e75b6;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="820" y="450" width="220" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="s4" value="4. Codify as a skill&#xa;SKILL.md + helpers" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d9eaf7;strokeColor=#2e75b6;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="515" y="570" width="220" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="s5" value="5. Validate quickly&#xa;2–3 fresh examples" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d9eaf7;strokeColor=#2e75b6;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="210" y="450" width="220" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="s6" value="6. Use (and automate)&#xa;Run skill repeatedly" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d9eaf7;strokeColor=#2e75b6;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="210" y="250" width="220" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="e12" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=block;html=1;strokeColor=#666666;" parent="1" source="s1" target="s2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e23" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=block;html=1;strokeColor=#666666;" parent="1" source="s2" target="s3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e34" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=block;html=1;strokeColor=#666666;" parent="1" source="s3" target="s4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e45" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=block;html=1;strokeColor=#666666;" parent="1" source="s4" target="s5" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e56" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=block;html=1;strokeColor=#666666;" parent="1" source="s5" target="s6" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e61" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=block;html=1;strokeColor=#666666;" parent="1" source="s6" target="s1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e62" value="Failures / edge cases → capture" style="edgeStyle=orthogonalEdgeStyle;rounded=1;dashed=1;dashPattern=3 3;endArrow=block;html=1;strokeColor=#999999;fontColor=#666666;" parent="1" source="s6" target="s2" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="520" y="290"/>
+                            <mxPoint x="520" y="360"/>
+                            <mxPoint x="760" y="360"/>
+                            <mxPoint x="760" y="290"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="3" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="820" y="560" width="220" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="box-signal" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="3" vertex="1">
+                    <mxGeometry width="220" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="signal-title" value="When to extract a skill" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;" parent="3" vertex="1">
+                    <mxGeometry x="13.75" y="15" width="192.5" height="24" as="geometry"/>
+                </mxCell>
+                <mxCell id="signal-body" value="• Repeated prompts / checklists&#xa;• Frequent small mistakes&#xa;• High context-switch cost&#xa;• Clear “definition of done”" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=12;fontColor=#333333;" parent="3" vertex="1">
+                    <mxGeometry x="13.75" y="45" width="192.5" height="80" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

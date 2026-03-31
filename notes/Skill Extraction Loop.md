@@ -9,8 +9,9 @@ tags:
   - publish
 status: draft
 ---
-
 # Skill Extraction Loop
+
+![[skill-extraction-loop.png]]
 
 The **skill extraction loop** is the practice of turning a repeatedly-used workflow into a reusable, delegatable **skill** (instructions + tooling + verification) so agents can run it with less supervision and less variance.
 
